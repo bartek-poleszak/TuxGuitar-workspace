@@ -1,0 +1,7 @@
+org/herac/tuxguitar/gm/port/GMSynthesizer.class
+org/herac/tuxguitar/gm/port/GMReceiver.class
+org/herac/tuxguitar/gm/port/GMChannel.class
+org/herac/tuxguitar/gm/GMChannelRouterConfigurator.class
+org/herac/tuxguitar/gm/GMChannelRoute.class
+org/herac/tuxguitar/gm/GMChannelRouter.class
+org/herac/tuxguitar/gm/port/GMOutputPort.class

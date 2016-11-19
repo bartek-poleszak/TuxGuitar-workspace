@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="tuxguitar" />
+        <module name="tuxguitar-ascii" />
+        <module name="tuxguitar-awt-graphics" />
+        <module name="tuxguitar-browser-ftp" />
+        <module name="tuxguitar-community" />
+        <module name="tuxguitar-compat" />
+        <module name="tuxguitar-converter" />
+        <module name="tuxguitar-editor-utils" />
+        <module name="tuxguitar-gervill" />
+        <module name="tuxguitar-gm-settings" />
+        <module name="tuxguitar-gm-utils" />
+        <module name="tuxguitar-gpx" />
+        <module name="tuxguitar-gtp" />
+        <module name="tuxguitar-gtp-ui" />
+        <module name="tuxguitar-image" />
+        <module name="tuxguitar-jsa" />
+        <module name="tuxguitar-lib" />
+        <module name="tuxguitar-lilypond" />
+        <module name="tuxguitar-midi" />
+        <module name="tuxguitar-musicxml" />
+        <module name="tuxguitar-pdf" />
+        <module name="tuxguitar-ptb" />
+        <module name="tuxguitar-svg" />
+        <module name="tuxguitar-tef" />
+        <module name="tuxguitar-tuner" />
+        <module name="tuxguitar-ui-toolkit" />
+        <module name="tuxguitar-ui-toolkit-swt" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="tuxguitar" target="1.5" />
+      <module name="tuxguitar-ascii" target="1.5" />
+      <module name="tuxguitar-awt-graphics" target="1.5" />
+      <module name="tuxguitar-browser-ftp" target="1.5" />
+      <module name="tuxguitar-community" target="1.5" />
+      <module name="tuxguitar-compat" target="1.5" />
+      <module name="tuxguitar-converter" target="1.5" />
+      <module name="tuxguitar-editor-utils" target="1.5" />
+      <module name="tuxguitar-gervill" target="1.5" />
+      <module name="tuxguitar-gm-settings" target="1.5" />
+      <module name="tuxguitar-gm-utils" target="1.5" />
+      <module name="tuxguitar-gpx" target="1.5" />
+      <module name="tuxguitar-gtp" target="1.5" />
+      <module name="tuxguitar-gtp-ui" target="1.5" />
+      <module name="tuxguitar-image" target="1.5" />
+      <module name="tuxguitar-jsa" target="1.5" />
+      <module name="tuxguitar-lib" target="1.5" />
+      <module name="tuxguitar-lilypond" target="1.5" />
+      <module name="tuxguitar-linux-x86" target="1.5" />
+      <module name="tuxguitar-midi" target="1.5" />
+      <module name="tuxguitar-musicxml" target="1.5" />
+      <module name="tuxguitar-pdf" target="1.5" />
+      <module name="tuxguitar-ptb" target="1.5" />
+      <module name="tuxguitar-svg" target="1.5" />
+      <module name="tuxguitar-tef" target="1.5" />
+      <module name="tuxguitar-tuner" target="1.5" />
+      <module name="tuxguitar-ui-toolkit" target="1.5" />
+      <module name="tuxguitar-ui-toolkit-swt" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

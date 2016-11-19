@@ -1,0 +1,7 @@
+#surefire
+#Fri Nov 18 19:58:18 CET 2016
+native-modules=true
+user.dir=/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-alsa
+idea.version=2016.2.5
+localRepository=/home/tubus/.m2/repository
+basedir=/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-alsa

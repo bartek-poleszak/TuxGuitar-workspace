@@ -1,0 +1,5 @@
+org/herac/tuxguitar/player/impl/midiport/alsa/MidiOutputPortImpl.class
+org/herac/tuxguitar/player/impl/midiport/alsa/MidiReceiverImpl.class
+org/herac/tuxguitar/player/impl/midiport/alsa/MidiOutputPortProviderPlugin.class
+org/herac/tuxguitar/player/impl/midiport/alsa/MidiSystem.class
+org/herac/tuxguitar/player/impl/midiport/alsa/MidiOutputPortProviderImpl.class

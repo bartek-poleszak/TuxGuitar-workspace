@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar/tuxguitar.iml" filepath="$PROJECT_DIR$/../../TuxGuitar/tuxguitar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-ascii/tuxguitar-ascii.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-ascii/tuxguitar-ascii.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-awt-graphics/tuxguitar-awt-graphics.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-awt-graphics/tuxguitar-awt-graphics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-browser-ftp/tuxguitar-browser-ftp.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-browser-ftp/tuxguitar-browser-ftp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-community/tuxguitar-community.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-community/tuxguitar-community.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-compat/tuxguitar-compat.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-compat/tuxguitar-compat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-converter/tuxguitar-converter.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-converter/tuxguitar-converter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-editor-utils/tuxguitar-editor-utils.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-editor-utils/tuxguitar-editor-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-gervill/tuxguitar-gervill.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-gervill/tuxguitar-gervill.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-gm-settings/tuxguitar-gm-settings.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-gm-settings/tuxguitar-gm-settings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-gm-utils/tuxguitar-gm-utils.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-gm-utils/tuxguitar-gm-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-gpx/tuxguitar-gpx.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-gpx/tuxguitar-gpx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-gtp/tuxguitar-gtp.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-gtp/tuxguitar-gtp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-gtp-ui/tuxguitar-gtp-ui.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-gtp-ui/tuxguitar-gtp-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-image/tuxguitar-image.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-image/tuxguitar-image.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-jsa/tuxguitar-jsa.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-jsa/tuxguitar-jsa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-lib/tuxguitar-lib.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-lib/tuxguitar-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-lilypond/tuxguitar-lilypond.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-lilypond/tuxguitar-lilypond.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tuxguitar-linux-x86_64.iml" filepath="$PROJECT_DIR$/tuxguitar-linux-x86_64.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-midi/tuxguitar-midi.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-midi/tuxguitar-midi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-musicxml/tuxguitar-musicxml.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-musicxml/tuxguitar-musicxml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-pdf/tuxguitar-pdf.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-pdf/tuxguitar-pdf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-ptb/tuxguitar-ptb.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-ptb/tuxguitar-ptb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-svg/tuxguitar-svg.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-svg/tuxguitar-svg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-tef/tuxguitar-tef.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-tef/tuxguitar-tef.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-tuner/tuxguitar-tuner.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-tuner/tuxguitar-tuner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-ui-toolkit/tuxguitar-ui-toolkit.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-ui-toolkit/tuxguitar-ui-toolkit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-ui-toolkit-swt/tuxguitar-ui-toolkit-swt.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-ui-toolkit-swt/tuxguitar-ui-toolkit-swt.iml" />
+    </modules>
+  </component>
+</project>

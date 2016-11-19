@@ -1,0 +1,14 @@
+org/herac/tuxguitar/app/tools/browser/ftp/TGBrowserImpl.class
+org/herac/tuxguitar/app/tools/browser/ftp/TGBrowserSettingsModel.class
+org/herac/tuxguitar/app/tools/browser/ftp/TGBrowserDataDialog$2.class
+org/herac/tuxguitar/app/tools/browser/ftp/TGBrowserFTPClient.class
+org/herac/tuxguitar/app/tools/browser/ftp/TGBrowserDataDialog$1.class
+org/herac/tuxguitar/app/tools/browser/ftp/TGBrowserDataDialog.class
+org/herac/tuxguitar/app/tools/browser/ftp/TGBrowserPluginImpl.class
+org/herac/tuxguitar/app/tools/browser/ftp/TGBrowserElementComparator.class
+org/herac/tuxguitar/app/tools/browser/ftp/TGBrowserImpl$ProxyAuthenticator.class
+org/herac/tuxguitar/app/tools/browser/ftp/utils/Base64Encoder.class
+org/herac/tuxguitar/app/tools/browser/ftp/utils/Base64Decoder.class
+org/herac/tuxguitar/app/tools/browser/ftp/TGBrowserElementImpl.class
+org/herac/tuxguitar/app/tools/browser/ftp/TGBrowserFactoryImpl.class
+org/herac/tuxguitar/app/tools/browser/ftp/TGBrowserDataDialog$3.class

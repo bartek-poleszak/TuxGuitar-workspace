@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="clean-native"  >
+<target name="clean-native">
+  <exec failonerror="true" dir="../../..//TuxGuitar-alsa/jni/" executable="make">
+    <arg value="clean"/>
+    <env value="tuxguitar-alsa-jni" key="LIBRARY_NAME"/>
+    <env value="lib" key="LIBRARY_PREFIX"/>
+    <env value=".so" key="LIBRARY_SUFFIX"/>
+  </exec>
+</target>
+</project>

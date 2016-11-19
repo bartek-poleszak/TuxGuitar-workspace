@@ -1,0 +1,17 @@
+/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-gpx/src/org/herac/tuxguitar/io/gpx/GPXFileSystem.java
+/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-gpx/src/org/herac/tuxguitar/io/gpx/GPXDocumentParser.java
+/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-gpx/src/org/herac/tuxguitar/io/gpx/score/GPXTrack.java
+/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-gpx/src/org/herac/tuxguitar/io/gpx/GPXInputStreamPlugin.java
+/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-gpx/src/org/herac/tuxguitar/io/gpx/score/GPXMasterBar.java
+/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-gpx/src/org/herac/tuxguitar/io/gpx/score/GPXBeat.java
+/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-gpx/src/org/herac/tuxguitar/io/gpx/score/GPXVoice.java
+/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-gpx/src/org/herac/tuxguitar/io/gpx/GPXInputStream.java
+/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-gpx/src/org/herac/tuxguitar/io/gpx/score/GPXNote.java
+/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-gpx/src/org/herac/tuxguitar/io/gpx/score/GPXBar.java
+/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-gpx/src/org/herac/tuxguitar/io/gpx/score/GPXRhythm.java
+/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-gpx/src/org/herac/tuxguitar/io/gpx/GPXByteBuffer.java
+/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-gpx/src/org/herac/tuxguitar/io/gpx/score/GPXAutomation.java
+/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-gpx/src/org/herac/tuxguitar/io/gpx/score/GPXScore.java
+/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-gpx/src/org/herac/tuxguitar/io/gpx/GPXDocumentReader.java
+/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-gpx/src/org/herac/tuxguitar/io/gpx/score/GPXDrumkit.java
+/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-gpx/src/org/herac/tuxguitar/io/gpx/score/GPXDocument.java

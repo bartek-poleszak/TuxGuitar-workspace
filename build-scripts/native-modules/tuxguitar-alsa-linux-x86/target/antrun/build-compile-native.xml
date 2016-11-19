@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="compile-native"  >
+<target name="compile-native">
+  <exec failonerror="true" dir="../../..//TuxGuitar-alsa/jni/" executable="make">
+    <env value="gcc" key="CC"/>
+    <env value="-I$(shell gcj -print-file-name=include/) -m32 -fPIC" key="CFLAGS"/>
+    <env value="-m32 -fPIC" key="LDFLAGS"/>
+    <env value="-lasound" key="LDLIBS"/>
+    <env value="-L/usr/lib" key="LDPATH"/>
+    <env value="tuxguitar-alsa-jni" key="LIBRARY_NAME"/>
+    <env value="lib" key="LIBRARY_PREFIX"/>
+    <env value=".so" key="LIBRARY_SUFFIX"/>
+  </exec>
+</target>
+</project>
