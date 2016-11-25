@@ -1,2 +1,8 @@
 .svn
-build-scripts/tuxguitar-linux-x86_64/target
+.idea
+*.jar
+*.class
+*.iml
+workspace.xml
+**/target/**
+pom.properties
