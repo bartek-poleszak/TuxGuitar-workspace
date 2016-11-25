@@ -38,11 +38,11 @@ public class TGMeasureCopyDialog {
 	private UIPanel buttons;
 	private UITableLayout buttonsLayout;
 
-    public void show(final TGViewContext context) {
+	public void show(final TGViewContext context) {
 		final TGSong song = context.getAttribute(TGDocumentContextAttributes.ATTRIBUTE_SONG);
 		final UIWindow uiParent = context.getAttribute(TGViewContext.ATTRIBUTE_PARENT2);
 		final TGTrack track = context.getAttribute(TGDocumentContextAttributes.ATTRIBUTE_TRACK);
-        final TGMeasureHeader header = context.getAttribute(TGDocumentContextAttributes.ATTRIBUTE_HEADER);
+		final TGMeasureHeader header = context.getAttribute(TGDocumentContextAttributes.ATTRIBUTE_HEADER);
 
 		uiFactory = TGApplication.getInstance(context.getContext()).getFactory();
 
@@ -55,18 +55,18 @@ public class TGMeasureCopyDialog {
 		createToSpinner(song.countMeasureHeaders(), track.countMeasures());
 
 		if (song.countTracks() > 1)
-            createOptionsPanel();
+			createOptionsPanel();
 
 		createButtonsPanel();
 		createOkButton(context.getContext());
 		createCancelButton();
 
-        setInitialValues(header.getNumber(), header.getNumber());
+		setInitialValues(header.getNumber(), header.getNumber());
 
 		TGDialogUtil.openDialog(dialog,TGDialogUtil.OPEN_STYLE_CENTER | TGDialogUtil.OPEN_STYLE_PACK);
 	}
 
-    private void createWindow(final UIWindow uiParent) {
+	private void createWindow(final UIWindow uiParent) {
 		dialogLayout = new UITableLayout();
 		dialog = uiFactory.createWindow(uiParent, true, false);
 		dialog.setLayout(dialogLayout);
@@ -133,15 +133,15 @@ public class TGMeasureCopyDialog {
 	}
 
 	private void createOptionsPanel() {
-        UITableLayout optionsLayout = new UITableLayout();
-        UILegendPanel options = uiFactory.createLegendPanel(dialog);
-        options.setLayout(optionsLayout);
-        options.setText(TuxGuitar.getProperty("options"));
-        dialogLayout.set(options, 2, 1, UITableLayout.ALIGN_FILL, UITableLayout.ALIGN_FILL, true, true);
+		UITableLayout optionsLayout = new UITableLayout();
+		UILegendPanel options = uiFactory.createLegendPanel(dialog);
+		options.setLayout(optionsLayout);
+		options.setText(TuxGuitar.getProperty("options"));
+		dialogLayout.set(options, 2, 1, UITableLayout.ALIGN_FILL, UITableLayout.ALIGN_FILL, true, true);
 
-        allTracksCheckBox = uiFactory.createCheckBox(options);
-        allTracksCheckBox.setText(TuxGuitar.getProperty("edit.all-tracks"));
-        allTracksCheckBox.setSelected(true);
+		allTracksCheckBox = uiFactory.createCheckBox(options);
+		allTracksCheckBox.setText(TuxGuitar.getProperty("edit.all-tracks"));
+		allTracksCheckBox.setSelected(true);
 	}
 
 	private void createButtonsPanel() {
@@ -176,10 +176,10 @@ public class TGMeasureCopyDialog {
 		buttonsLayout.set(buttonCancel, UITableLayout.MARGIN_RIGHT, 0f);
 	}
 
-    private void setInitialValues(int from, int to) {
-        fromSpinner.setValue(from);
-        fromSpinner.setValue(to);
-    }
+	private void setInitialValues(int from, int to) {
+		fromSpinner.setValue(from);
+		fromSpinner.setValue(to);
+	}
 
 	public void processAction(TGContext context) {
 		TGActionProcessor tgActionProcessor = new TGActionProcessor(context, TGCopyMeasureAction.NAME);
