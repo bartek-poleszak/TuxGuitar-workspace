@@ -3,6 +3,7 @@ package org.herac.tuxguitar.app.view.dialog.measure;
 import org.herac.tuxguitar.app.TuxGuitar;
 import org.herac.tuxguitar.app.action.impl.measure.TGCopyMeasureAction;
 import org.herac.tuxguitar.app.ui.TGApplication;
+import org.herac.tuxguitar.app.view.component.tab.Selector;
 import org.herac.tuxguitar.app.view.controller.TGViewContext;
 import org.herac.tuxguitar.app.view.util.TGDialogUtil;
 import org.herac.tuxguitar.document.TGDocumentContextAttributes;
@@ -24,6 +25,7 @@ import org.herac.tuxguitar.ui.widget.UIWindow;
 import org.herac.tuxguitar.util.TGContext;
 
 public class TGMeasureCopyDialog {
+	public static final String ATTRIBUTE_SELECTOR = Selector.class.getName();
 	private static final int MIN_SELECTION = 1;
 	private static final float BUTTONS_PANEL_MARGIN = 0f;
 
@@ -42,7 +44,7 @@ public class TGMeasureCopyDialog {
 		final TGSong song = context.getAttribute(TGDocumentContextAttributes.ATTRIBUTE_SONG);
 		final UIWindow uiParent = context.getAttribute(TGViewContext.ATTRIBUTE_PARENT2);
 		final TGTrack track = context.getAttribute(TGDocumentContextAttributes.ATTRIBUTE_TRACK);
-		final TGMeasureHeader header = context.getAttribute(TGDocumentContextAttributes.ATTRIBUTE_HEADER);
+		final Selector selector = context.getAttribute(ATTRIBUTE_SELECTOR);
 
 		uiFactory = TGApplication.getInstance(context.getContext()).getFactory();
 
@@ -61,7 +63,7 @@ public class TGMeasureCopyDialog {
 		createOkButton(context.getContext());
 		createCancelButton();
 
-		setInitialValues(header.getNumber(), header.getNumber());
+		setInitialFromToValues(selector.getStartMeasureNumber(), selector.getEndMeasureNumber());
 
 		TGDialogUtil.openDialog(dialog,TGDialogUtil.OPEN_STYLE_CENTER | TGDialogUtil.OPEN_STYLE_PACK);
 	}
@@ -176,9 +178,9 @@ public class TGMeasureCopyDialog {
 		buttonsLayout.set(buttonCancel, UITableLayout.MARGIN_RIGHT, 0f);
 	}
 
-	private void setInitialValues(int from, int to) {
+	private void setInitialFromToValues(int from, int to) {
 		fromSpinner.setValue(from);
-		fromSpinner.setValue(to);
+		toSpinner.setValue(to);
 	}
 
 	public void processAction(TGContext context) {
