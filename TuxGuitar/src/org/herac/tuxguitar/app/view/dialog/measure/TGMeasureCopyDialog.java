@@ -63,7 +63,7 @@ public class TGMeasureCopyDialog {
 		createOkButton(context.getContext());
 		createCancelButton();
 
-		setInitialFromToValues(selector.getStartMeasureNumber(), selector.getEndMeasureNumber());
+		setInitialFromToValues(selector);
 
 		TGDialogUtil.openDialog(dialog,TGDialogUtil.OPEN_STYLE_CENTER | TGDialogUtil.OPEN_STYLE_PACK);
 	}
@@ -178,9 +178,9 @@ public class TGMeasureCopyDialog {
 		buttonsLayout.set(buttonCancel, UITableLayout.MARGIN_RIGHT, 0f);
 	}
 
-	private void setInitialFromToValues(int from, int to) {
-		fromSpinner.setValue(from);
-		toSpinner.setValue(to);
+	private void setInitialFromToValues(Selector selector) {
+		fromSpinner.setValue(selector.getStartBeat().getMeasure().getNumber());
+		toSpinner.setValue(selector.getEndBeat().getMeasure().getNumber());
 	}
 
 	public void processAction(TGContext context) {

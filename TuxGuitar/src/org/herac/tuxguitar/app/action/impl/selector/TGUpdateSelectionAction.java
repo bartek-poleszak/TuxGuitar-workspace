@@ -6,7 +6,7 @@ import org.herac.tuxguitar.app.view.component.tab.TablatureEditor;
 import org.herac.tuxguitar.app.view.component.tab.edit.EditorKit;
 import org.herac.tuxguitar.document.TGDocumentContextAttributes;
 import org.herac.tuxguitar.editor.action.TGActionBase;
-import org.herac.tuxguitar.song.models.TGMeasureHeader;
+import org.herac.tuxguitar.song.models.TGBeat;
 import org.herac.tuxguitar.util.TGContext;
 
 /**
@@ -24,9 +24,9 @@ public class TGUpdateSelectionAction extends TGActionBase {
 		EditorKit editorKit = TablatureEditor.getInstance(getContext()).getTablature().getEditorKit();
 
 		if (editorKit.fillSelection(context)) {
-			TGMeasureHeader measureHeader = context.getAttribute(TGDocumentContextAttributes.ATTRIBUTE_HEADER);
+			TGBeat beat = context.getAttribute(TGDocumentContextAttributes.ATTRIBUTE_BEAT);
 			Selector selector = TablatureEditor.getInstance(getContext()).getTablature().getSelector();
-			selector.updateSelection(measureHeader.getNumber());
+			selector.updateSelection(beat);
 		}
 	}
 }
