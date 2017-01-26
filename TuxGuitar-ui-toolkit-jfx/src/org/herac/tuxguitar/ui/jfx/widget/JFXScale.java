@@ -28,6 +28,12 @@ public class JFXScale extends JFXControl<Slider> implements UIScale {
 	}
 
 	public void setMaximum(int maximum) {
+		if( this.getControl().getMin() > maximum ) {
+			this.getControl().setMin(maximum);
+		}
+		if( this.getControl().getValue() > maximum ) {
+			this.getControl().setValue(maximum);
+		}
 		this.getControl().setMax(maximum);
 	}
 
@@ -36,6 +42,12 @@ public class JFXScale extends JFXControl<Slider> implements UIScale {
 	}
 
 	public void setMinimum(int minimum) {
+		if( this.getControl().getMax() < minimum ) {
+			this.getControl().setMax(minimum);
+		}
+		if( this.getControl().getValue() < minimum ) {
+			this.getControl().setValue(minimum);
+		}
 		this.getControl().setMin(minimum);
 	}
 

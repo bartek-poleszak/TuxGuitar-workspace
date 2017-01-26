@@ -71,9 +71,8 @@ public abstract class QTAbstractWindow<T extends QWidget> extends QTLayoutContai
 	public void computeMargins() {
 		super.computeMargins();
 		
-		QContentsMargins margins = this.getContainerChildMargins();
-		
 		if( this.menuBar != null ) {
+			QContentsMargins margins = this.getContainerChildMargins();
 			margins.top += ((QTMenuBar)this.menuBar).getControl().sizeHint().height();
 			
 			this.setContainerChildMargins(margins);
@@ -82,6 +81,7 @@ public abstract class QTAbstractWindow<T extends QWidget> extends QTLayoutContai
 	
 	public void setBounds(UIRectangle bounds) {
 		this.resizeListener.setBounds(bounds);
+		
 		super.setBounds(bounds);
 	}
 	
@@ -114,6 +114,14 @@ public abstract class QTAbstractWindow<T extends QWidget> extends QTLayoutContai
 		this.closeListener.removeListener(listener);
 	}
 	
+	public void dispose() {
+		if( this.menuBar != null && !this.menuBar.isDisposed()) {
+			this.menuBar.dispose();
+		}
+		
+		super.dispose();
+	}
+	
 	private class QTWindowResizeListener implements UIResizeListener {
 		
 		private UIRectangle bounds;
@@ -124,10 +132,20 @@ public abstract class QTAbstractWindow<T extends QWidget> extends QTLayoutContai
 		}
 		
 		public void onResize(UIResizeEvent event) {
-			UIRectangle bounds = this.window.getBounds();
-			if( this.bounds == null || !this.bounds.equals(bounds)) {
-				this.bounds = bounds;
-				this.window.layout();
+			if(!this.window.isDisposed()) {
+				UIRectangle bounds = this.window.getBounds();
+				
+				int frameY = this.window.getControl().frameGeometry().y();
+				if( frameY < 0 ) {
+					bounds.getPosition().setY(bounds.getPosition().getY() - frameY);
+					
+					this.bounds = null;
+				}
+				
+				if( this.bounds == null || !this.bounds.equals(bounds)) {
+					this.bounds = bounds;
+					this.window.layout(bounds);
+				}
 			}
 		}
 		
@@ -143,10 +161,12 @@ public abstract class QTAbstractWindow<T extends QWidget> extends QTLayoutContai
 		}
 		
 		public void handle(QEvent event) {
-			if(!this.isEmpty()) {
-				super.handle(event);
-			} else {
-				this.getControl().dispose();
+			if(!this.getControl().isDisposed()) {
+				if(!this.isEmpty()) {
+					super.handle(event);
+				} else {
+					this.getControl().dispose();
+				}
 			}
 		}
 	}

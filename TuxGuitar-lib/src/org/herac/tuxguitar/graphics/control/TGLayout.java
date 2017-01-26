@@ -443,12 +443,12 @@ public abstract class TGLayout {
 	}
 	
 	public void setDotStyle(TGPainter painter){
-		painter.setForeground(((getStyle() & TGLayout.DISPLAY_SCORE) != 0 ? getResources().getScoreNoteColor() : getResources().getTabNoteColor()));
-		painter.setBackground(((getStyle() & TGLayout.DISPLAY_SCORE) != 0 ? getResources().getScoreNoteColor() : getResources().getTabNoteColor()));
+		painter.setForeground(getDarkColor(((getStyle() & TGLayout.DISPLAY_SCORE) != 0 ? getResources().getScoreNoteColor() : getResources().getTabNoteColor())));
+		painter.setBackground(getDarkColor(((getStyle() & TGLayout.DISPLAY_SCORE) != 0 ? getResources().getScoreNoteColor() : getResources().getTabNoteColor())));
 	}
 	
 	public void setDivisionTypeStyle(TGPainter painter){
-		painter.setForeground(getResources().getColorBlack());
+		painter.setForeground(getDarkColor(((getStyle() & TGLayout.DISPLAY_SCORE) != 0 ? getResources().getScoreNoteColor() : getResources().getTabNoteColor())));
 		painter.setBackground(getLightColor(getResources().getBackgroundColor()));
 		painter.setFont(getResources().getDefaultFont());
 	}
@@ -462,7 +462,7 @@ public abstract class TGLayout {
 	public void setChordStyle(TGChordImpl chord){
 		chord.setFont(getResources().getChordFont());
 		chord.setForegroundColor(getResources().getColorBlack());
-		chord.setBackgroundColor(getResources().getBackgroundColor());
+		chord.setBackgroundColor(getLightColor(getResources().getBackgroundColor()));
 		chord.setColor(getDarkColor(getResources().getLineColor()));
 		chord.setNoteColor(getDarkColor(getResources().getTabNoteColor()));
 		chord.setTonicColor(getDarkColor(getResources().getTabNoteColor()));

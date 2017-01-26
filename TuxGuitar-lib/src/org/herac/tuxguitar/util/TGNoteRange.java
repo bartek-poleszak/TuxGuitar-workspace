@@ -36,4 +36,5 @@ public class TGNoteRange {
 	public LinkedHashSet<TGMeasure> getMeasures() {
 		return measures;
 	}
+
 }

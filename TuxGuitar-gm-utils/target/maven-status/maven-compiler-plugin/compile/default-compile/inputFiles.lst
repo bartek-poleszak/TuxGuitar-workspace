@@ -1,7 +1,7 @@
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-gm-utils/src/org/herac/tuxguitar/gm/port/GMSynthesizer.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-gm-utils/src/org/herac/tuxguitar/gm/port/GMOutputPort.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-gm-utils/src/org/herac/tuxguitar/gm/port/GMReceiver.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-gm-utils/src/org/herac/tuxguitar/gm/GMChannelRouterConfigurator.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-gm-utils/src/org/herac/tuxguitar/gm/GMChannelRouter.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-gm-utils/src/org/herac/tuxguitar/gm/port/GMChannel.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-gm-utils/src/org/herac/tuxguitar/gm/GMChannelRoute.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-gm-utils/src/org/herac/tuxguitar/gm/port/GMOutputPort.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-gm-utils/src/org/herac/tuxguitar/gm/GMChannelRouter.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-gm-utils/src/org/herac/tuxguitar/gm/port/GMSynthesizer.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-gm-utils/src/org/herac/tuxguitar/gm/GMChannelRouterConfigurator.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-gm-utils/src/org/herac/tuxguitar/gm/GMChannelRoute.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-gm-utils/src/org/herac/tuxguitar/gm/port/GMChannel.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-gm-utils/src/org/herac/tuxguitar/gm/port/GMReceiver.java

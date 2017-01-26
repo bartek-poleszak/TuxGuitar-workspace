@@ -30,6 +30,7 @@ org/herac/tuxguitar/ui/swt/widget/SWTWindow.class
 org/herac/tuxguitar/ui/swt/printer/SWTPrinterJob.class
 org/herac/tuxguitar/ui/swt/widget/SWTLinkLabel.class
 org/herac/tuxguitar/ui/swt/widget/SWTReadOnlyTextBox.class
+org/herac/tuxguitar/ui/swt/widget/SWTTable$SWTTableUpdateManager.class
 org/herac/tuxguitar/ui/swt/widget/SWTReadOnlyTextField.class
 org/herac/tuxguitar/ui/swt/widget/SWTTextField.class
 org/herac/tuxguitar/ui/swt/event/SWTKeyListenerManager.class
@@ -55,6 +56,7 @@ org/herac/tuxguitar/ui/swt/menu/SWTMenu.class
 org/herac/tuxguitar/ui/swt/chooser/SWTDirectoryChooser.class
 org/herac/tuxguitar/ui/swt/resource/SWTColor.class
 org/herac/tuxguitar/ui/swt/widget/SWTScrollBarPanel.class
+org/herac/tuxguitar/ui/swt/widget/SWTDropDownSelectLight$SWTDropDownComboEventListener.class
 org/herac/tuxguitar/ui/swt/widget/SWTContainer.class
 org/herac/tuxguitar/ui/swt/widget/SWTTabItem$1.class
 org/herac/tuxguitar/ui/swt/event/SWTDisposeListenerManager.class
@@ -84,6 +86,7 @@ org/herac/tuxguitar/ui/swt/printer/SWTPrinter.class
 org/herac/tuxguitar/ui/swt/printer/SWTPrinterPage.class
 org/herac/tuxguitar/ui/swt/widget/SWTEventReceiver.class
 org/herac/tuxguitar/ui/swt/event/SWTPaintListenerManager.class
+org/herac/tuxguitar/ui/swt/widget/SWTDropDownSelectCCombo.class
 org/herac/tuxguitar/ui/swt/widget/SWTKnob$3.class
 org/herac/tuxguitar/ui/swt/toolbar/SWTToolItem.class
 org/herac/tuxguitar/ui/swt/event/SWTLinkListenerManager.class
@@ -97,6 +100,7 @@ org/herac/tuxguitar/ui/swt/widget/SWTKnob$4.class
 org/herac/tuxguitar/ui/swt/widget/SWTWindow$SWTWindowResizeListener.class
 org/herac/tuxguitar/ui/swt/event/SWTResizeListenerManager.class
 org/herac/tuxguitar/ui/swt/widget/SWTTabItem.class
+org/herac/tuxguitar/ui/swt/widget/SWTDropDownSelectLight.class
 org/herac/tuxguitar/ui/swt/event/SWTMenuListenerManager.class
 org/herac/tuxguitar/ui/swt/toolbar/SWTToolActionItem.class
 org/herac/tuxguitar/ui/swt/menu/SWTMenuSubMenuItem.class

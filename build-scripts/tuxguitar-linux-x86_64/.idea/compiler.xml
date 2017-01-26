@@ -40,7 +40,9 @@
         <module name="tuxguitar-jsa" />
         <module name="tuxguitar-lib" />
         <module name="tuxguitar-lilypond" />
+        <module name="tuxguitar-lilypond-ui" />
         <module name="tuxguitar-midi" />
+        <module name="tuxguitar-midi-ui" />
         <module name="tuxguitar-musicxml" />
         <module name="tuxguitar-pdf" />
         <module name="tuxguitar-ptb" />
@@ -70,8 +72,10 @@
       <module name="tuxguitar-jsa" target="1.5" />
       <module name="tuxguitar-lib" target="1.5" />
       <module name="tuxguitar-lilypond" target="1.5" />
+      <module name="tuxguitar-lilypond-ui" target="1.5" />
       <module name="tuxguitar-linux-x86_64" target="1.5" />
       <module name="tuxguitar-midi" target="1.5" />
+      <module name="tuxguitar-midi-ui" target="1.5" />
       <module name="tuxguitar-musicxml" target="1.5" />
       <module name="tuxguitar-pdf" target="1.5" />
       <module name="tuxguitar-ptb" target="1.5" />

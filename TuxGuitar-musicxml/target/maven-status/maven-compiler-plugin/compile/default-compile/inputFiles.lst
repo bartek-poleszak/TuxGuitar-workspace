@@ -1,4 +1,3 @@
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-musicxml/src/org/herac/tuxguitar/io/musicxml/MusicXMLSongStream.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-musicxml/src/org/herac/tuxguitar/io/musicxml/MusicXMLWriter.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-musicxml/src/org/herac/tuxguitar/io/musicxml/MusicXMLSongExporter.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-musicxml/src/org/herac/tuxguitar/io/musicxml/MusicXMLPluginExporter.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-musicxml/src/org/herac/tuxguitar/io/musicxml/MusicXMLSongWriter.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-musicxml/src/org/herac/tuxguitar/io/musicxml/MusicXMLSongWriterPlugin.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-musicxml/src/org/herac/tuxguitar/io/musicxml/MusicXMLWriter.java

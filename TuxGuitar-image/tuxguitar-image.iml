@@ -14,6 +14,6 @@
     <orderEntry type="module" module-name="tuxguitar" scope="PROVIDED" />
     <orderEntry type="module" module-name="tuxguitar-ui-toolkit" scope="PROVIDED" />
     <orderEntry type="module" module-name="tuxguitar-ui-toolkit-swt" scope="PROVIDED" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.eclipse.swt:org.eclipse.swt.gtk.linux.x86_64:4.4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.eclipse.swt:org.eclipse.swt.gtk.linux.x86_64:4.6.1" level="project" />
   </component>
 </module>

@@ -1,5 +1,4 @@
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ascii/src/org/herac/tuxguitar/io/ascii/ASCIISongStream.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ascii/src/org/herac/tuxguitar/io/ascii/ASCIIOutputStream.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ascii/src/org/herac/tuxguitar/io/ascii/ASCIITabOutputStream.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ascii/src/org/herac/tuxguitar/io/ascii/ASCIISongExporter.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ascii/src/org/herac/tuxguitar/io/ascii/ASCIIPluginExporter.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ascii/src/org/herac/tuxguitar/io/ascii/ASCIIOutputStream.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ascii/src/org/herac/tuxguitar/io/ascii/ASCIITabOutputStream.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ascii/src/org/herac/tuxguitar/io/ascii/ASCIISongWriterPlugin.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ascii/src/org/herac/tuxguitar/io/ascii/ASCIISongWriter.java

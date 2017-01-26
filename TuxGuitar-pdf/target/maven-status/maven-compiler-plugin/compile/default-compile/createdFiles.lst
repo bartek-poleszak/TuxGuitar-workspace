@@ -1,8 +1,7 @@
-org/herac/tuxguitar/io/pdf/PDFStylesHandler.class
-org/herac/tuxguitar/io/pdf/PDFSongStream.class
-org/herac/tuxguitar/io/pdf/PDFStylesHandler$1.class
+org/herac/tuxguitar/io/pdf/PDFSongWriter.class
+org/herac/tuxguitar/io/pdf/PDFSongWriterPlugin.class
 org/herac/tuxguitar/io/pdf/PDFDocument.class
-org/herac/tuxguitar/io/pdf/PDFPluginExporter.class
-org/herac/tuxguitar/io/pdf/PDFSongExporter.class
-org/herac/tuxguitar/io/pdf/PDFPluginStylesHandler.class
 org/herac/tuxguitar/io/pdf/PDFController.class
+org/herac/tuxguitar/io/pdf/PDFSettingsHandlerPlugin.class
+org/herac/tuxguitar/io/pdf/PDFSettingsHandler$1.class
+org/herac/tuxguitar/io/pdf/PDFSettingsHandler.class

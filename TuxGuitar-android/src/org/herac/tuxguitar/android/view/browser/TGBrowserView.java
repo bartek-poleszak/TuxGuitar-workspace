@@ -32,7 +32,7 @@ import org.herac.tuxguitar.editor.TGEditorManager;
 import org.herac.tuxguitar.editor.action.TGActionProcessor;
 import org.herac.tuxguitar.io.base.TGFileFormat;
 import org.herac.tuxguitar.io.base.TGFileFormatManager;
-import org.herac.tuxguitar.io.base.TGOutputStreamBase;
+import org.herac.tuxguitar.io.base.TGFileFormatUtils;
 import org.herac.tuxguitar.util.TGContext;
 import org.herac.tuxguitar.util.error.TGErrorManager;
 
@@ -144,17 +144,25 @@ public class TGBrowserView extends RelativeLayout {
 	public String createFormatDropDownLabel(TGFileFormat format) {
 		return format.getName();
 	}
-	
+
+	public String createFormatExportDropDownLabel(TGFileFormat format) {
+		return findActivity().getString(R.string.storage_export_to, format.getName());
+	}
+
 	public List<TGSelectableItem> createFormatValues() {
 		List<TGSelectableItem> selectableItems = new ArrayList<TGSelectableItem>();
-		
-		Iterator<?> outputStreams = TGFileFormatManager.getInstance(findContext()).getOutputStreams();
-		while( outputStreams.hasNext() ) {
-			TGOutputStreamBase outputStream = (TGOutputStreamBase) outputStreams.next();
-			TGFileFormat format = outputStream.getFileFormat();
+		TGFileFormatManager fileFormatManager = TGFileFormatManager.getInstance(findContext());
+
+		List<TGFileFormat> commonFormats = fileFormatManager.findWriteFileFormats(true);
+		for(TGFileFormat format : commonFormats) {
 			selectableItems.add(new TGSelectableItem(format, createFormatLabel(format), createFormatDropDownLabel(format)));
 		}
-		
+
+		List<TGFileFormat> nonCommonFormats = fileFormatManager.findWriteFileFormats(false);
+		for(TGFileFormat format : nonCommonFormats) {
+			selectableItems.add(new TGSelectableItem(format, createFormatLabel(format), createFormatExportDropDownLabel(format)));
+		}
+
 		return selectableItems;
 	}
 	
@@ -265,7 +273,7 @@ public class TGBrowserView extends RelativeLayout {
 				TGFileFormat format = findSelectedFormat();
 				
 				EditText editText = (EditText) findViewById(R.id.browser_save_element_name);
-				String elementName = editText.getText().toString() + createExtension(format, TGFileFormatManager.DEFAULT_EXTENSION);
+				String elementName = editText.getText().toString() + createExtension(format, TGFileFormatUtils.DEFAULT_EXTENSION);
 				
 				TGBrowserElement element = findElement(elementName);
 				if( element != null ) {
@@ -298,40 +306,7 @@ public class TGBrowserView extends RelativeLayout {
 	public String createExtension(String supportedFormat) {
 		return ("." + supportedFormat);
 	}
-	
-	public String findExtension(String text, String defaultValue) {
-		int index = text.lastIndexOf(".");
-		if( index >= 0 ) {
-			return text.substring(index);
-		}
-		return defaultValue;
-	}
-	
-	public TGFileFormat findFormatByElementName(TGBrowserElement element) throws TGBrowserException {
-		TGFileFormat defaultFormat = null;
-		String extension = findExtension(element.getName(), null);
-		
-		Iterator<?> outputStreams = TGFileFormatManager.getInstance(findContext()).getOutputStreams();
-		while( outputStreams.hasNext() ) {
-			TGOutputStreamBase outputStream = (TGOutputStreamBase) outputStreams.next();
-			TGFileFormat format = outputStream.getFileFormat();
-			
-			if( extension != null ) {
-				for(String supportedFormat : format.getSupportedFormats()) {
-					if( extension.toLowerCase().equals(this.createExtension(supportedFormat).toLowerCase())) {
-						return format;
-					}
-				}
-			}
-			
-			if( defaultFormat == null ) {
-				defaultFormat = format;
-			}
-		}
-		
-		return defaultFormat;
-	}
-	
+
 	public TGBrowserElement findElement(String name) throws TGBrowserException {
 		TGBrowserSession tgBrowserSession = TGBrowserManager.getInstance(this.findContext()).getSession();
 		if( tgBrowserSession.getCurrentElements() != null ) {

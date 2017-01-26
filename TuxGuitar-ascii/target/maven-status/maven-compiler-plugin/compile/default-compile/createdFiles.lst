@@ -1,5 +1,4 @@
-org/herac/tuxguitar/io/ascii/ASCIIPluginExporter.class
-org/herac/tuxguitar/io/ascii/ASCIIOutputStream.class
-org/herac/tuxguitar/io/ascii/ASCIISongExporter.class
-org/herac/tuxguitar/io/ascii/ASCIISongStream.class
+org/herac/tuxguitar/io/ascii/ASCIISongWriterPlugin.class
 org/herac/tuxguitar/io/ascii/ASCIITabOutputStream.class
+org/herac/tuxguitar/io/ascii/ASCIIOutputStream.class
+org/herac/tuxguitar/io/ascii/ASCIISongWriter.class

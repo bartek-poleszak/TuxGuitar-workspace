@@ -2,7 +2,7 @@ package org.herac.tuxguitar.app.document;
 
 import java.io.File;
 import java.io.UnsupportedEncodingException;
-import java.net.URL;
+import java.net.URI;
 import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -10,19 +10,18 @@ import java.util.List;
 
 import org.herac.tuxguitar.app.helper.TGFileHistory;
 import org.herac.tuxguitar.app.util.TGFileChooser;
-import org.herac.tuxguitar.app.util.TGFileFormatUtils;
 import org.herac.tuxguitar.app.util.TGFileUtils;
 import org.herac.tuxguitar.app.view.dialog.file.TGFileChooserDialog;
 import org.herac.tuxguitar.app.view.dialog.file.TGFileChooserHandler;
 import org.herac.tuxguitar.io.base.TGFileFormat;
-import org.herac.tuxguitar.io.base.TGFileFormatManager;
+import org.herac.tuxguitar.io.base.TGFileFormatUtils;
 import org.herac.tuxguitar.util.TGContext;
 import org.herac.tuxguitar.util.singleton.TGSingletonFactory;
 import org.herac.tuxguitar.util.singleton.TGSingletonUtil;
 
 public class TGDocumentFileManager {
 	
-	public static final String DEFAULT_FILENAME = ("Untitled" + TGFileFormatManager.DEFAULT_EXTENSION);
+	public static final String DEFAULT_FILENAME = ("Untitled" + TGFileFormatUtils.DEFAULT_EXTENSION);
 	
 	private TGContext context;
 	
@@ -44,33 +43,25 @@ public class TGDocumentFileManager {
 		TGFileChooser.getInstance(this.context).openChooser(handler, formats, TGFileChooserDialog.STYLE_OPEN, fileName, chooserPath);
 	}
 	
-	public void chooseFileNameForSave(TGFileChooserHandler handler, TGFileFormat format) {
-		this.chooseFileNameForSave(handler, toFileFormatList(format));
+	public void chooseFileNameForSave(TGFileFormat format, TGFileChooserHandler handler) {
+		this.chooseFileNameForSave(this.toFileFormatList(format), handler);
 	}
 	
-	public void chooseFileNameForSave(TGFileChooserHandler handler) {
-		this.chooseFileNameForSave(handler, TGFileFormatManager.getInstance(this.context).getOutputFormats());
-	}
-	
-	public void chooseFileNameForSave(TGFileChooserHandler handler, List<TGFileFormat> formats) {
+	public void chooseFileNameForSave(List<TGFileFormat> formats, TGFileChooserHandler handler) {
 		String chooserPath = getCurrentFilePath();
 		if( chooserPath == null ) {
 			chooserPath = TGFileHistory.getInstance(this.context).getChooserPath();
 		}
 		
 		String fileName = this.createFileName(formats, DEFAULT_FILENAME, true);
-		String defaultExtension = TGFileFormatManager.DEFAULT_EXTENSION;
+		String defaultExtension = TGFileFormatUtils.DEFAULT_EXTENSION;
 		
 		TGFileChooser.getInstance(this.context).openChooser(handler, formats, TGFileChooserDialog.STYLE_SAVE, fileName, chooserPath, defaultExtension);
 	}
 	
-	public void findFileNameForSave(TGFileChooserHandler handler) {
-		this.findFileNameForSave(handler, TGFileFormatManager.getInstance(this.context).getOutputFormats());
-	}
-	
-	public void findFileNameForSave(TGFileChooserHandler handler, List<TGFileFormat> formats) {
+	public void findFileNameForSave(List<TGFileFormat> formats, TGFileChooserHandler handler) {
 		if( this.isNewFile() || !this.isLocalFile()) {
-			this.chooseFileNameForSave(handler, formats);
+			this.chooseFileNameForSave(formats, handler);
 		} 
 		else {
 			String fullPath = null;
@@ -83,7 +74,7 @@ public class TGDocumentFileManager {
 			if( fullPath != null && TGFileFormatUtils.isSupportedFormat(formats, fullPath) ) {
 				handler.updateFileName(fullPath);
 			} else  {
-				this.chooseFileNameForSave(handler, formats);
+				this.chooseFileNameForSave(formats, handler);
 			}
 		}
 	}
@@ -134,9 +125,9 @@ public class TGDocumentFileManager {
 	
 	public String getCurrentFileName(String defaultName) {
 		if(!this.isNewFile()){
-			URL url = getCurrentURL();
-			if( url != null ){
-				return decode(new File(url.getFile()).getName());
+			URI uri = getCurrentURI();
+			if( uri != null && !uri.isOpaque()){
+				return decode(new File(uri.getPath()).getName());
 			}
 		}
 		return defaultName;
@@ -144,9 +135,9 @@ public class TGDocumentFileManager {
 	
 	public String getCurrentFilePath() {
 		if(!this.isNewFile()){
-			URL url = getCurrentURL();
-			if(url != null){
-				String file = getFilePath(url);
+			URI uri = getCurrentURI();
+			if(uri != null){
+				String file = getFilePath(uri);
 				if( file != null ) {
 					return decode(file);
 				}
@@ -155,31 +146,29 @@ public class TGDocumentFileManager {
 		return null;
 	}
 	
-	public URL getCurrentURL(){
+	public URI getCurrentURI(){
 		TGDocument document = TGDocumentListManager.getInstance(this.context).findCurrentDocument();
 		if( document != null ) {
-			return document.getUrl();
+			return document.getUri();
 		}
 		return null;
 	}
 	
-	public String getFilePath(URL url){
-		if( TGFileUtils.isLocalFile(url) ){
-			return new File(url.getFile()).getParent();
+	public String getFilePath(URI uri){
+		if( TGFileUtils.isLocalFile(uri) ){
+			return new File(uri).getParent();
 		}
 		return null;
 	}
 	
 	public boolean isNewFile(){
-		URL url = getCurrentURL();
-		
-		return (url == null);
+		return (this.getCurrentURI() == null);
 	}
 	
 	public boolean isLocalFile(){
-		URL url = getCurrentURL();
+		URI uri = getCurrentURI();
 		
-		return (url != null && TGFileUtils.isLocalFile(url));
+		return (uri != null && TGFileUtils.isLocalFile(uri));
 	}
 	
 	private String decode(String url){

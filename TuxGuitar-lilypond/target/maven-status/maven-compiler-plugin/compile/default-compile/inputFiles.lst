@@ -1,8 +1,4 @@
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-lilypond/src/org/herac/tuxguitar/io/lilypond/LilypondSongExporter.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-lilypond/src/org/herac/tuxguitar/io/lilypond/LilypondSettingsDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-lilypond/src/org/herac/tuxguitar/io/lilypond/LilypondPluginSettingsHandler.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-lilypond/src/org/herac/tuxguitar/io/lilypond/LilypondSongStream.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-lilypond/src/org/herac/tuxguitar/io/lilypond/LilypondPluginExporter.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-lilypond/src/org/herac/tuxguitar/io/lilypond/LilypondSettings.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-lilypond/src/org/herac/tuxguitar/io/lilypond/LilypondOutputStream.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-lilypond/src/org/herac/tuxguitar/io/lilypond/LilypondSettingsHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-lilypond/src/org/herac/tuxguitar/io/lilypond/LilypondSongWriterPlugin.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-lilypond/src/org/herac/tuxguitar/io/lilypond/LilypondOutputStream.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-lilypond/src/org/herac/tuxguitar/io/lilypond/LilypondSongWriter.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-lilypond/src/org/herac/tuxguitar/io/lilypond/LilypondSettings.java

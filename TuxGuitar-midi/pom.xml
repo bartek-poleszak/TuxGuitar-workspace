@@ -32,20 +32,5 @@
 			<artifactId>tuxguitar-gm-utils</artifactId>
 			<scope>provided</scope>
 		</dependency>
-		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>tuxguitar-editor-utils</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>tuxguitar</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>tuxguitar-ui-toolkit</artifactId>
-			<scope>provided</scope>
-		</dependency>
 	</dependencies>
 </project>

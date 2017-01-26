@@ -1,19 +1,18 @@
 package org.herac.tuxguitar.android.view.browser;
 
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+
 import org.herac.tuxguitar.android.R;
 import org.herac.tuxguitar.android.action.impl.browser.TGBrowserCdElementAction;
-import org.herac.tuxguitar.android.action.impl.browser.TGBrowserOpenElementAction;
 import org.herac.tuxguitar.android.browser.TGBrowserManager;
 import org.herac.tuxguitar.android.browser.model.TGBrowserElement;
 import org.herac.tuxguitar.android.browser.model.TGBrowserException;
 import org.herac.tuxguitar.android.browser.model.TGBrowserSession;
 import org.herac.tuxguitar.editor.action.TGActionProcessor;
-import org.herac.tuxguitar.io.base.TGFileFormat;
+import org.herac.tuxguitar.io.base.TGFileFormatUtils;
 import org.herac.tuxguitar.util.error.TGErrorManager;
-
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
 
 public class TGBrowserItemListener implements OnItemClickListener {
 
@@ -52,13 +51,15 @@ public class TGBrowserItemListener implements OnItemClickListener {
 	}
 
 	public void processOpenElementAction(TGBrowserElement element) {
-		this.browserView.getActionHandler().createBrowserElementAction(TGBrowserOpenElementAction.NAME, element).process();
+		String formatCode = TGFileFormatUtils.getFileFormatCode(element.getName());
+
+		this.browserView.getActionHandler().createBrowserOpenElementAction(element, formatCode).process();
 	}
 	
 	public void processSaveElementAction(final TGBrowserElement element) throws TGBrowserException {
 		String confirmMessage = this.browserView.findActivity().getString(R.string.browser_file_overwrite_question);
-		TGFileFormat format = this.browserView.findFormatByElementName(element);
-		TGActionProcessor actionProcessor = this.browserView.getActionHandler().createBrowserSaveElementAction(element, format);
+		String formatCode = TGFileFormatUtils.getFileFormatCode(element.getName());
+		TGActionProcessor actionProcessor = this.browserView.getActionHandler().createBrowserSaveElementAction(element, formatCode);
 		
 		this.browserView.getActionHandler().processConfirmableAction(actionProcessor, confirmMessage);
 	}

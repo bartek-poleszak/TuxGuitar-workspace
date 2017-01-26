@@ -12,8 +12,5 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="tuxguitar-lib" scope="PROVIDED" />
     <orderEntry type="module" module-name="tuxguitar-gm-utils" scope="PROVIDED" />
-    <orderEntry type="module" module-name="tuxguitar-editor-utils" scope="PROVIDED" />
-    <orderEntry type="module" module-name="tuxguitar" scope="PROVIDED" />
-    <orderEntry type="module" module-name="tuxguitar-ui-toolkit" scope="PROVIDED" />
   </component>
 </module>

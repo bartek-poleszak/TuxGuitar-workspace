@@ -20,8 +20,10 @@
       <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-jsa/tuxguitar-jsa.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-jsa/tuxguitar-jsa.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-lib/tuxguitar-lib.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-lib/tuxguitar-lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-lilypond/tuxguitar-lilypond.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-lilypond/tuxguitar-lilypond.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-lilypond-ui/tuxguitar-lilypond-ui.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-lilypond-ui/tuxguitar-lilypond-ui.iml" />
       <module fileurl="file://$PROJECT_DIR$/tuxguitar-linux-x86_64.iml" filepath="$PROJECT_DIR$/tuxguitar-linux-x86_64.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-midi/tuxguitar-midi.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-midi/tuxguitar-midi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-midi-ui/tuxguitar-midi-ui.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-midi-ui/tuxguitar-midi-ui.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-musicxml/tuxguitar-musicxml.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-musicxml/tuxguitar-musicxml.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-pdf/tuxguitar-pdf.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-pdf/tuxguitar-pdf.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../TuxGuitar-ptb/tuxguitar-ptb.iml" filepath="$PROJECT_DIR$/../../TuxGuitar-ptb/tuxguitar-ptb.iml" />

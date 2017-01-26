@@ -1,9 +1,9 @@
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-browser-ftp/src/org/herac/tuxguitar/app/tools/browser/ftp/TGBrowserElementComparator.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-browser-ftp/src/org/herac/tuxguitar/app/tools/browser/ftp/utils/Base64Encoder.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-browser-ftp/src/org/herac/tuxguitar/app/tools/browser/ftp/TGBrowserElementImpl.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-browser-ftp/src/org/herac/tuxguitar/app/tools/browser/ftp/TGBrowserImpl.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-browser-ftp/src/org/herac/tuxguitar/app/tools/browser/ftp/TGBrowserFactoryImpl.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-browser-ftp/src/org/herac/tuxguitar/app/tools/browser/ftp/utils/Base64Decoder.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-browser-ftp/src/org/herac/tuxguitar/app/tools/browser/ftp/TGBrowserSettingsModel.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-browser-ftp/src/org/herac/tuxguitar/app/tools/browser/ftp/TGBrowserFTPClient.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-browser-ftp/src/org/herac/tuxguitar/app/tools/browser/ftp/TGBrowserPluginImpl.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-browser-ftp/src/org/herac/tuxguitar/app/tools/browser/ftp/TGBrowserElementImpl.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-browser-ftp/src/org/herac/tuxguitar/app/tools/browser/ftp/TGBrowserSettingsModel.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-browser-ftp/src/org/herac/tuxguitar/app/tools/browser/ftp/TGBrowserFTPClient.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-browser-ftp/src/org/herac/tuxguitar/app/tools/browser/ftp/TGBrowserElementComparator.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-browser-ftp/src/org/herac/tuxguitar/app/tools/browser/ftp/TGBrowserPluginImpl.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-browser-ftp/src/org/herac/tuxguitar/app/tools/browser/ftp/utils/Base64Encoder.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-browser-ftp/src/org/herac/tuxguitar/app/tools/browser/ftp/utils/Base64Decoder.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-browser-ftp/src/org/herac/tuxguitar/app/tools/browser/ftp/TGBrowserImpl.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-browser-ftp/src/org/herac/tuxguitar/app/tools/browser/ftp/TGBrowserFactoryImpl.java

@@ -1,5 +1,4 @@
-org/herac/tuxguitar/io/musicxml/MusicXMLSongStream.class
+org/herac/tuxguitar/io/musicxml/MusicXMLSongWriterPlugin.class
 org/herac/tuxguitar/io/musicxml/MusicXMLWriter.class
 org/herac/tuxguitar/io/musicxml/MusicXMLWriter$TGVoiceJoiner.class
-org/herac/tuxguitar/io/musicxml/MusicXMLSongExporter.class
-org/herac/tuxguitar/io/musicxml/MusicXMLPluginExporter.class
+org/herac/tuxguitar/io/musicxml/MusicXMLSongWriter.class

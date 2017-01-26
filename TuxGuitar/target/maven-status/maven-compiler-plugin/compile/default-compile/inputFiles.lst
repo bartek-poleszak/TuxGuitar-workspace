@@ -1,504 +1,520 @@
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGPrintAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/util/TGFileUtils.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/edit/tablature/TGMouseClickAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/settings/items/StylesOption.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/channel/TGChannelSettingsHandlerManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/io/TGSongStreamActionInterceptor.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/settings/TGReloadTitleAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGReadURLAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/printer/TGPrintPreviewDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/util/TGMessageDialogUtil.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/about/TGAboutDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/ViewMenuItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/effects/TGOpenHarmonicDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/lyric/TGLyricEditor.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/TGToolBarSectionTrack.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/undo/impl/marker/TGUndoableMarkerGeneric.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/browser/main/TGBrowserDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/graphics/TGColorImpl.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/insert/TGOpenChordDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateModifiedChannelController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/about/TGAboutContentReader.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGCloseDocumentsAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/util/TGSyncProcess.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/layout/TGSetChordDiagramEnabledAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGCloseAllDocumentsAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/note/TGOpenStrokeUpDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateShiftedNoteController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/tripletfeel/TGTripletFeelDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/composition/TGOpenTimeSignatureDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/caret/TGGoRightAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/synchronizer/TGSynchronizerControllerImpl.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/variables/TGConfigPath.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGOpenURLAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/layout/TGSetChordNameEnabledAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/table/TGTableViewer.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/document/TGDocumentListAttributes.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/io/TGSongStreamAdapterManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/measure/TGMeasureCleanDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/matrix/TGMatrixEditorController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/variables/TGVarSongArtist.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/browser/main/TGBrowserBar.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/caret/TGGoLeftAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/file/TGFileChooserDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/gui/TGActionProcessingListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/io/TGSongStreamSettingsHandlerPlugin.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/main/TGWindowDivider.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/tools/TGOpenTransposeDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/marker/TGGoFirstMarkerAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/transport/TGTransportMetronomeAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/variables/TGVarFilePath.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/TGUpdateBuffer.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/effects/TGOpenGraceDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/transpose/TGTransposeDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/layout/TGSetPageLayoutAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/TGBrowserException.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/tabfolder/TGTabFolder.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/tempo/TGTempoDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/TGUpdateController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/edit/tablature/TGMouseExitAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/xml/TGBrowserWriter.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/stroke/TGStrokeDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/installer/TGActionInstaller.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/tremolopicking/TGTremoloPickingDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/TGToolBarSectionView.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGExportFileAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/repeat/TGRepeatCloseDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/config/TGConfigKeys.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/variables/TGVarSongName.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/info/TGSongInfoDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/printer/TGPrintPreviewDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordRecognizer.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/tabfolder/TGTabEventListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/beat/TGBeatMoveDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/TGToolBarSectionChord.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/view/TGShowExternalBeatAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/scale/xml/ScaleReader.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/clipboard/Transferable.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/ChordMenuItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/base/TGBrowserCallBack.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/tremolopicking/TGTremoloPickingDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordDatabase.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/timesignature/TGTimeSignatureDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/tab/Caret.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/fretboard/TGFretBoard.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/composition/TGOpenKeySignatureDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/repeat/TGRepeatAlternativeDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/keybindings/KeyBindingAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/TGActionAdapterManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/undoable/TGUndoableCaretState.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/table/TGTableRowCell.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/measure/TGMeasurePasteDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/TGToolBarSectionLayout.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/TGToolBar.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/table/TGTableColumn.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/tab/Tablature.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/marker/TGGoLastMarkerAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/plugin/TGPluginInfoDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGPrintPreviewAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/TrackMenuItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/lyric/TGLyricModifyListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/plugins/TGPluginPropertiesHandler.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/util/TGFileFormatUtils.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/marker/TGModifyMarkerAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/printer/PrintLayout.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/settings/TGReloadLanguageAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/grace/TGGraceDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/undoable/TGUndoableContext.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/file/TGFileChooserDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/edit/TGSetVoice2Action.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/channel/TGChannelHandle.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/ui/TGApplication.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/TGBrowserCollection.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordCustomNameChooser.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/scale/TGScaleDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateWrittenFileController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/config/TGConfigManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateSongController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/edit/TGSetNaturalKeyAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/language/TGLanguageEvent.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateAddedTrackController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/document/TGDocumentListManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/TGActionIdList.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGCloseOtherDocumentsAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/marker/TGMarkerEditor.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/properties/TGFilePropertiesHandler.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/view/TGToggleTransportDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/controller/TGToggleViewController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/confirm/TGConfirmDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/browser/main/TGBrowserMenuBar.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/settings/TGReloadIconsAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/settings/items/MainOption.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/TGToolBarController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/settings/items/SkinOption.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateTransportPositionController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/transport/TGTransportDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/message/TGMessageDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/properties/TGPropertiesFactoryImpl.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/TransportMenuItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/printer/PrintStyles.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/TuxGuitar.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/note/TGOpenStrokeDownDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/properties/TGFilePropertiesWriter.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/TGBrowserFactoryHandler.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/transport/TGTransportModeDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/settings/TGOpenSettingsEditorAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/printer/TGPrintStylesDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordCreatorUtil.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/DurationMenuItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/MeasureMenuItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/EditMenuItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/trill/TGTrillDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/transpose/TGTransposeDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/variables/TGPluginConfigPath.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/marker/TGRemoveMarkerAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/documentation/TGDocumentationDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/keybindings/KeyBindingActionDefaults.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/channel/TGKnobSelectionListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/measure/TGMeasurePasteDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/properties/TGResourcePropertiesReader.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/channel/TGChannelManagerDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/keysignature/TGKeySignatureDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/util/TGClassLoader.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/filesystem/TGBrowserElementImpl.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/measure/TGMeasureCopyDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/clipboard/CannotInsertTransferException.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/FileMenuItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/util/ArgumentParser.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/TGMainSingleton.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/util/TGSplash.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/TrackMenu.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/measure/TGMeasureRemoveDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/system/TGDisposeAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/repeat/TGRepeatAlternativeDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/TGToolBarSectionDuration.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGSaveAsFileAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/controller/TGOpenViewController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/tools/TGSelectScaleAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGImportSongAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGExitAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/measure/TGGoPreviousMeasureAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/layout/TGSetTablatureEnabledAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/main/TGWindowLayout.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/variables/TGHomePath.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/settings/TGOpenPluginListDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/printer/TGPrinterChooserHandler.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/NoteEffectsMenuItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/filesystem/TGBrowserSettingsModel.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/TGBrowserConnection.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/transport/TGTransport.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/trill/TGTrillDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/language/TGLanguageManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordCreatorListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/effects/TGOpenBendDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/measure/TGGoFirstMeasureAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/variables/TGVarAppName.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordEditor.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/track/TGGoFirstTrackAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/TGUpdateListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/util/TGDialogUtil.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/plugin/TGPluginListDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/edit/TGSetMouseModeSelectionAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/language/TGResourceBundle.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/keybindings/KeyBindingActionManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/tools/TGToggleBrowserAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/TGBrowserConnectionHandler.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordSelector.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/transport/TGTransportSetLoopEHeaderAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateSongInfoController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/marker/TGGoNextMarkerAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/bend/TGBendDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/undoable/TGUndoableJoined.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGCloseCurrentDocumentAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/variables/TGVarAdapter.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/track/TGToggleLyricEditorAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/view/TGToggleChannelsDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/settings/TGReloadMidiDevicesAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/measure/TGMeasureAddDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/save/TGUnsavedDocumentInterceptor.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/insert/TGOpenRepeatAlternativeDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/filesystem/TGBrowserImpl.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/printer/TGPrintStylesHandler.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/marker/TGUpdateMarkerAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/variables/TGVarSongAlbum.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/tab/TGControl.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/help/TGOpenAboutDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/clipboard/MeasureTransferable.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/printer/PrintDocument.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/note/TGOpenBeatMoveDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/marker/TGMarkerList.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/transport/TGStopTransportInterceptor.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/base/TGBrowser.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/editor/TGExternalBeatViewerManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGImportFileAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/tab/TablatureEditor.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/util/TGCursorController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/marker/TGGoToMarkerAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/settings/items/LanguageOption.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/channel/TGChannelManagerDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateReadedURLController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/track/TGGoNextTrackAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/layout/TGSetScoreEnabledAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/view/TGToggleToolbarsAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/transport/TGTransportCountDownAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/settings/TGOpenKeyBindingEditorAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/tools/TGOpenScaleDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateModifiedNoteController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateModifiedDurationController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/tab/TGControlPaintListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/main/TGWindow.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/plugins/TGPluginSettingsHandler.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/util/TGProcess.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/channel/TGChannelSettingsDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/color/TGColorManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/track/TGGoToTrackAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/clef/TGClefDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/document/TGDocumentFileManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/insert/TGOpenTextDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/marker/TGGoPreviousMarkerAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/scale/ScaleInfo.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/custom/TGCustomTool.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/confirm/TGConfirmDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateSavedSongController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/error/TGStdOutErrorHandler.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/TGActionMap.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/scale/ScaleEvent.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/harmonic/TGHarmonicDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/editor/EditorCache.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/browser/main/TGBrowserDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/matrix/TGMatrixConfig.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/custom/TGToolItemPlugin.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/view/TGToggleMatrixEditorAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/fretboard/TGFretBoardEditor.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/config/TGConfigPropertiesHandler.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/editor/TGExternalBeatViewerEvent.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/settings/items/TGSettingsOption.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateLoadedSongController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/plugins/TGPluginSettingsManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/piano/TGPianoEditor.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/edit/tablature/TGMenuShownAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/harmonic/TGHarmonicDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/keybindings/TGKeyBindingSelectorHandler.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/settings/TGReloadSettingsAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateModifiedVelocityController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordSettingsHandler.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/settings/TGSettingsEditor.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/base/TGBrowserFactory.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/about/TGAboutDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/CompositionMenuItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/measure/TGPasteMeasureAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGWriteFileAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/view/TGOpenViewAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/BeatMenuItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/base/TGBrowserSettings.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/properties/TGFilePropertiesReader.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/help/TGOpenDocumentationDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/TGToolBarSectionEdit.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/track/TGTrackPropertiesDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/measure/TGOpenMeasureCleanDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/TGMain.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/edit/TGSetMouseModeEditionAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/insert/TGOpenRepeatCloseDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/layout/TGSetLinearLayoutAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/view/TGToggleFretBoardEditorAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/transport/TGTransportSetLoopSHeaderAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/TGBrowserManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/xml/TGBrowserReader.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/channel/TGChannelList.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/ToolMenuItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/printer/PrintController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGCloseDocumentAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/graphics/TGResourceFactoryImpl.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/channel/TGChannelItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/util/TGBufferedPainterListenerLocked.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/measure/TGOpenMeasureAddDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/variables/TGVarSongAuthor.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/grace/TGGraceDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/util/MidiTickUtil.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/transport/TGTransportStopAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/keybindings/xml/KeyBindingReader.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/thread/TGSyncThreadInterceptor.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/marker/TGMarkerListController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/clipboard/ClipBoard.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/filesystem/TGBrowserFactoryImpl.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/scale/ScaleManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/DynamicMenuItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/repeat/TGRepeatCloseDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/TGActionContextImpl.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/graphics/TGFontImpl.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/MarkerMenuItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/table/TGTable.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGCustomChordManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/channel/TGChannelSettingsHandler.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateRemovedTrackController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/installer/TGActionConfigMap.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/message/TGMessageDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/track/TGGoPreviousTrackAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/keybindings/TGKeyBindingEditorController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/io/TGSongStreamSettingsHandler.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/HelpMenuItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/plugin/TGPluginListDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/composition/TGOpenSongInfoDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/edit/tablature/TGMouseMoveAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/keysignature/TGKeySignatureDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/table/TGTableRow.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/tools/TGTransposeAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/plugin/TGPluginSettingsDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/tripletfeel/TGTripletFeelDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/measure/TGMeasureAddDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/tab/edit/MouseKit.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/effects/TGOpenTremoloPickingDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateMeasureController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/xml/TGChordXMLWriter.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateRemovedMeasureController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/piano/TGPianoConfig.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGOpenFileAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/marker/TGMarkerEditorController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/document/TGDocument.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/measure/TGOpenMeasurePasteDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/composition/TGOpenTempoDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/transport/TGTransportListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/variables/TGVarAppVersion.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/filesystem/TGBrowserDataDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/undo/impl/marker/TGUndoableMarkerGenericController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/marker/TGToggleMarkerListAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/measure/TGGoNextMeasureAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/TGToolBarSectionFile.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/table/TGTableDividerHelper.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/settings/TGReloadStylesAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/helper/TGFileHistory.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/xml/TGChordXMLReader.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/composition/TGOpenTripletFeelDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/settings/items/SoundOption.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/base/TGBrowserElement.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/transport/TGTransportDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/table/TGTableBodyLayout.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/lock/TGLockableActionListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/transport/TGOpenTransportModeDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/edit/TGSetVoice1Action.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/table/TGTableCanvasPainter.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/marker/TGOpenMarkerEditorAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/graphics/TGPainterImpl.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/keybindings/TGKeyBindingSelector.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/TGMenuItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/lyric/TGLyricEditorController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/measure/TGCopyMeasureAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/measure/TGOpenMeasureCopyDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/info/TGSongInfoDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/caret/TGGoDownAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/icons/TGIconTheme.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/TGToolBarSectionDynamic.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/measure/TGMeasureCopyDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/thread/TGSyncThreadAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/controller/TGViewContext.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/layout/TGSetCompactViewAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/plugin/TGPluginInfoDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/TGToolBarSectionComposition.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/measure/TGOpenMeasureRemoveDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/TGToolBarSectionDivider.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/xml/TGChordXML.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdatePlayerTracksController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGSongStreamActionBase.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/fretboard/TGFretBoardConfig.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/matrix/TGMatrixEditor.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/settings/TGSettingsEditorController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/clef/TGClefDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/TGBrowserCollectionInfo.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordSettingsDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/view/TGToggleViewAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/file/TGFileChooserHandler.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/keybindings/xml/KeyBindingWriter.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/util/TGSyncProcessLocked.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/installer/TGActionConfig.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/layout/TGSetMultitrackViewAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/effects/TGOpenTremoloBarDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/properties/TGPropertiesAdapter.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/TGToolBarSectionEffect.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordList.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/properties/TGPropertiesBaseHandler.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/util/TGMusicKeyUtils.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/text/TGTextDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/table/TGTableDividerListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/caret/TGMoveToAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/transport/TGTransportPlayAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/transport/TGTransportModeAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/plugins/TGPluginSettingsAdapter.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/measure/TGMeasureRemoveDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/text/TGTextDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/piano/TGPiano.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/file/TGOpenUrlDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/util/TGFileChooser.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/plugins/TGPluginInfoHandler.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/config/TGConfigDefaultsPropertiesHandler.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/error/TGActionErrorHandler.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/measure/TGGoLastMeasureAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateAddedMeasureController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/channel/TGChannelSettingsPlugin.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/TGMenuManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/filesystem/TGBrowserElementComparator.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/printer/TGPrintStylesDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/piano/TGPianoEditorController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/scale/TGScaleDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/TGToolBarSectionTransport.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/composition/TGOpenClefDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/error/TGErrorAdapter.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateModifiedMarkerController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/icons/TGIconEvent.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordNamingConvention.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/transport/TGTransportModeDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/track/TGOpenTrackPropertiesDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/printer/TGPrinterChooserDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordCustomList.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/TGUpdateContext.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/TGActionProcessorListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/tab/edit/EditorKit.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/browser/main/TGBrowserToolBar.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/view/TGTogglePianoEditorAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/beat/TGBeatMoveDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/TGToolBarSectionMarker.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/timesignature/TGTimeSignatureDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/save/TGDocumentModifierListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/fretboard/TGFretBoardEditorController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateCacheController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/keybindings/KeyBindingListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/track/TGTrackPropertiesDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/documentation/TGDocumentationDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/keybindings/TGKeyBindingEditor.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGExportSongAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/custom/TGCustomToolManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/view/TGHideExternalBeatAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/measure/TGMeasureCleanDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/TGActionContextFactoryImpl.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordSettings.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/tremolobar/TGTremoloBarDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGSaveFileAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordCustomNameChooserHandler.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/TGToolBarSection.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/icons/TGIconManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/tempo/TGTempoDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/TGToolBarSectionBeat.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/tremolobar/TGTremoloBarDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/properties/TGDefaultAndStoredPropertiesHandler.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/printer/TGPrinterChooserDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/util/TGBufferedPainterLocked.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/properties/TGPropertiesImpl.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateItemsOnSuccessController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/caret/TGGoUpAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/config/TGConfigDefaults.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/track/TGGoLastTrackAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/settings/TGReloadTableSettingsAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/effects/TGOpenTrillDialogAction.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/variables/TGUserSharePath.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/variables/TGVarFileName.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/transport/TGDisableOnPlayInterceptor.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/error/TGGuiOutErrorHandler.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/stroke/TGStrokeDialogController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/plugin/TGBrowserPlugin.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/file/TGOpenUrlDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/bend/TGBendDialog.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateItemsController.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/table/TGTableRowLayout.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/graphics/TGImageImpl.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/undoable/TGUndoableActionListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/keybindings/xml/KeyBindingWriter.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateItemsOnSuccessController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateModifiedDurationController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/view/TGShowExternalBeatAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/graphics/TGImageImpl.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordList.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGCloseCurrentDocumentAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/TGActionIdList.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/main/TGWindowDivider.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/composition/TGOpenTimeSignatureDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/io/persistence/TGPersistenceSettingsMode.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/track/TGOpenTrackPropertiesDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/TGActionContextImpl.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateModifiedVelocityController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/measure/TGOpenMeasureCleanDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/note/TGOpenStrokeUpDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/file/TGFileChooserHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/measure/TGOpenMeasureRemoveDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/file/TGFileChooserDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/main/TGMainToolBarSectionMarker.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGOpenURLAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/io/stream/TGSongStreamSettingsHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/edit/TGEditToolBarSectionEffect.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/measure/TGMeasureRemoveDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/ToolMenuItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/tempo/TGTempoDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/file/TGOpenUrlDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/lyric/TGLyricModifyListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/table/TGTableDividerListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/clipboard/CannotInsertTransferException.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGExitAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/variables/TGPluginConfigPath.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/channel/TGKnobSelectionListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordCreatorListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/lock/TGLockableActionListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/scale/TGScaleDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateSongInfoController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/tab/Selector.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGReadURLAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordSettingsHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/keybindings/KeyBindingActionManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/edit/tablature/TGMouseExitAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/caret/TGGoUpAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGCloseOtherDocumentsAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/TGBrowserException.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/transport/TGDisableOnPlayInterceptor.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/language/TGLanguageEvent.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/main/TGMainToolBarSectionView.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordRecognizer.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/io/stream/TGSongStreamSettingsHandlerPlugin.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/settings/TGReloadLanguageAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/properties/TGFilePropertiesHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/variables/TGVarSongName.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/MeasureMenuItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/TGBrowserCollectionInfo.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/util/TGFileUtils.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/channel/TGChannelHandle.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/view/TGToggleChannelsDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/effects/TGOpenHarmonicDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/graphics/TGColorImpl.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/caret/TGGoLeftAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/table/TGTableRowCell.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/properties/TGResourcePropertiesReader.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/clef/TGClefDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/settings/TGOpenPluginListDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/info/TGSongInfoDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/lyric/TGLyricEditorController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordEditor.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/printer/TGPrintStylesDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/printer/TGPrintStylesHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGOpenFileAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/browser/main/TGBrowserBar.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/measure/TGCopyMeasureAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/caret/TGGoRightAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/measure/TGMeasurePasteDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/measure/TGOpenMeasurePasteDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateModifiedNoteController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/filesystem/TGBrowserElementComparator.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/document/TGDocumentFileManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/main/TGMainToolBarSectionDivider.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/composition/TGOpenKeySignatureDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/table/TGTableCanvasPainter.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/tabfolder/TGTabEventListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/variables/TGVarSongArtist.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/marker/TGGoToMarkerAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/config/TGConfigDefaultsPropertiesHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/piano/TGPiano.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/layout/TGSetScoreEnabledAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/util/TGMusicKeyUtils.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/message/TGMessageDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/marker/TGMarkerList.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/transport/TGTransportDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/stroke/TGStrokeDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/tremolopicking/TGTremoloPickingDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/composition/TGOpenSongInfoDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/color/TGColorManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/keybindings/TGKeyBindingSelector.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordNamingConvention.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/transpose/TGTransposeDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/scale/ScaleEvent.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/util/TGDialogUtil.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/marker/TGRemoveMarkerAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/effects/TGOpenGraceDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/measure/TGMeasureCleanDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/trill/TGTrillDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/TGUpdateListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/TrackMenuItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/keybindings/TGKeyBindingEditor.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/document/TGDocumentListManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGPrintAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/transpose/TGTransposeDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/TGBrowserCollection.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/variables/TGVarAdapter.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/filesystem/TGBrowserFactoryImpl.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/file/TGOpenUrlDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/edit/TGEditToolBarSectionComposition.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/HelpMenuItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/graphics/TGPainterImpl.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/fretboard/TGFretBoardEditor.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/graphics/TGFontImpl.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/measure/TGOpenMeasureAddDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/grace/TGGraceDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/document/TGDocumentListAttributes.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/plugin/TGBrowserPlugin.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/transport/TGTransportModeDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/keysignature/TGKeySignatureDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/filesystem/TGBrowserElementImpl.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/table/TGTableColumn.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/marker/TGGoPreviousMarkerAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/view/TGHideExternalBeatAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/TGBrowserManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/fretboard/TGFretBoardEditorController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/documentation/TGDocumentationDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/view/TGToggleViewAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/marker/TGToggleMarkerListAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/scale/ScaleInfo.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/track/TGGoFirstTrackAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/view/TGTogglePianoEditorAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/help/TGOpenAboutDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/effects/TGOpenTremoloPickingDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/browser/main/TGBrowserToolBar.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/util/TGClassLoader.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGWriteFileAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/model/TGToolBarSection.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/edit/TGSetMouseModeEditionAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/channel/TGChannelSettingsHandlerManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/view/TGToggleEditToolbarAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordSettingsDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/track/TGGoNextTrackAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/fretboard/TGFretBoardConfig.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/language/TGResourceBundle.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/settings/items/SoundOption.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/measure/TGGoPreviousMeasureAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/undoable/TGUndoableContext.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/util/ArgumentParser.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/base/TGBrowserFactorySettingsHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/confirm/TGConfirmDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/variables/TGVarAppName.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/variables/TGVarFilePath.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/tripletfeel/TGTripletFeelDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateLoadedSongController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/plugin/TGPluginListDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/settings/items/StylesOption.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateNoteRangeController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/properties/TGFilePropertiesWriter.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/io/persistence/TGPersistenceSettingsManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/matrix/TGMatrixConfig.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/insert/TGOpenChordDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/insert/TGOpenTextDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateTransportPositionController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/settings/TGSettingsEditor.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/transport/TGTransportMetronomeAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/tremolobar/TGTremoloBarDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/settings/TGOpenSettingsEditorAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/main/TGMainToolBarSectionLayout.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/ui/TGApplication.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/base/TGBrowserElement.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/marker/TGMarkerEditorController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/about/TGAboutContentReader.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/measure/TGMeasureCleanDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/io/stream/TGSongStreamActionInterceptor.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/browser/main/TGBrowserDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/edit/TGEditToolBarSectionEdit.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/TGActionMap.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/TGActionAdapterManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/transport/TGTransportSetLoopEHeaderAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/channel/TGChannelList.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/layout/TGSetCompactViewAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/filesystem/TGBrowserSettingsModel.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/main/TGMainToolBarSectionEdit.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/error/TGErrorAdapter.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/note/TGOpenBeatMoveDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/note/TGOpenStrokeDownDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/main/TGMainToolBarSectionTransport.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/edit/TGEditToolBarController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordSelector.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/effects/TGOpenTremoloBarDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/BeatMenuItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/undoable/TGUndoableActionListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/settings/TGReloadIconsAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/graphics/TGResourceFactoryImpl.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateSongController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/marker/TGMarkerListController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/error/TGActionErrorHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateAddedTrackController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/edit/TGEditToolBar.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/installer/TGActionConfigMap.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/TGBrowserConnection.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/MarkerMenuItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/marker/TGMarkerEditor.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/language/TGLanguageManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/undo/impl/marker/TGUndoableMarkerGeneric.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/edit/tablature/TGMenuShownAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/TGUpdateController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateRemovedTrackController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/printer/TGPrinterChooserHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/view/TGToggleFretBoardEditorAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateMeasureController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/repeat/TGRepeatCloseDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/grace/TGGraceDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/measure/TGGoLastMeasureAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/icons/TGIconManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/model/TGToolBarModel.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/text/TGTextDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/message/TGMessageDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/composition/TGOpenClefDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/thread/TGSyncThreadAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/printer/PrintLayout.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/view/TGToggleMatrixEditorAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/TGMainSingleton.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/tab/Caret.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/TrackMenu.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/config/TGConfigKeys.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/document/TGDocument.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/edit/TGSetVoice2Action.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/filesystem/TGBrowserDataDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/TransportMenuItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/properties/TGPropertiesBaseHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/settings/TGReloadMidiDevicesAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/confirm/TGConfirmDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/settings/TGReloadTableSettingsAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/measure/TGMeasureCopyDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/properties/TGPropertiesAdapter.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/keybindings/KeyBindingActionDefaults.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/settings/items/LanguageOption.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/text/TGTextDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/repeat/TGRepeatCloseDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/browser/main/TGBrowserDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/harmonic/TGHarmonicDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/config/TGConfigManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/track/TGGoToTrackAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateSavedSongController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/editor/TGExternalBeatViewerEvent.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateWrittenFileController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/effects/TGOpenBendDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/plugins/TGPluginInfoHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/tools/TGOpenTransposeDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/base/TGBrowser.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/beat/TGBeatMoveDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/printer/PrintController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/settings/items/SkinOption.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/marker/TGUpdateMarkerAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/DynamicMenuItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/marker/TGGoFirstMarkerAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/base/TGBrowserCallBack.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/transport/TGTransportModeAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/filesystem/TGBrowserImpl.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/TuxGuitar.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/repeat/TGRepeatAlternativeDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/edit/TGSetMouseModeSelectionAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/icons/TGIconEvent.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/printer/TGPrinterChooserDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/settings/items/MainOption.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/xml/TGChordXMLReader.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/custom/TGCustomTool.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/controller/TGViewContext.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/printer/TGPrintPreviewDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/tabfolder/TGTabFolder.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/track/TGGoPreviousTrackAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/TGUpdateBuffer.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/TGUpdateContext.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/installer/TGActionConfig.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/piano/TGPianoEditorController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/measure/TGOpenMeasureCopyDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/info/TGSongInfoDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/io/stream/TGSongStreamAdapterManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/channel/TGChannelSettingsHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/properties/TGPropertiesFactoryImpl.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/main/TGMainToolBarSection.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/layout/TGSetMultitrackViewAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/track/TGTrackPropertiesDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/base/TGBrowserFactoryHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/plugins/TGPluginSettingsManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/printer/TGPrinterChooserDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/stroke/TGStrokeDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/track/TGToggleLyricEditorAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGCustomChordManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/variables/TGVarSongAuthor.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/table/TGTableRow.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/edit/TGEditToolBarSectionBeat.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/file/TGFileChooserDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/plugin/TGPluginSettingsDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/transport/TGTransportSetLoopSHeaderAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/system/TGDisposeAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/tremolobar/TGTremoloBarDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/icons/TGIconTheme.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordCustomNameChooserHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/track/TGGoLastTrackAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGExportSongAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGCloseDocumentAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/util/MidiTickUtil.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordDatabase.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/selector/TGUpdateSelectionAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/CompositionMenuItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateRemovedMeasureController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/edit/tablature/TGMouseMoveAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/controller/TGToggleViewController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/timesignature/TGTimeSignatureDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/about/TGAboutDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/keybindings/KeyBindingListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/transport/TGTransport.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/marker/TGGoLastMarkerAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/printer/PrintStyles.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/edit/TGEditToolBarSectionDynamic.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/insert/TGOpenRepeatCloseDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/timesignature/TGTimeSignatureDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/settings/TGReloadTitleAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/view/TGToggleTransportDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/bend/TGBendDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/keybindings/TGKeyBindingEditorController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/scale/xml/ScaleReader.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/marker/TGOpenMarkerEditorAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/transport/TGTransportPlayAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/main/TGMainToolBarSectionFile.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateReadedURLController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/base/TGBrowserFactory.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/ViewMenuItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/view/TGOpenViewAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordCreatorUtil.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/table/TGTable.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/tools/TGSelectScaleAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/clipboard/MeasureTransferable.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/measure/TGMeasureAddDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/settings/TGOpenKeyBindingEditorAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateAddedMeasureController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/measure/TGMeasureCopyDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/transport/TGTransportDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/TGMenuItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/io/persistence/TGPersistenceSettingsHandlerPlugin.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/layout/TGSetPageLayoutAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/editor/TGExternalBeatViewerManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/variables/TGVarSongAlbum.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/transport/TGTransportStopAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/printer/PrintDocument.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGSaveAsFileAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/view/TGToggleMainToolbarAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/tripletfeel/TGTripletFeelDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/main/TGMainToolBarSectionComposition.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/tremolopicking/TGTremoloPickingDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/composition/TGOpenTripletFeelDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/thread/TGSyncThreadInterceptor.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/composition/TGOpenTempoDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/measure/TGGoNextMeasureAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/NoteEffectsMenuItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/TGMain.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/xml/TGBrowserWriter.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGSongStreamActionBase.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/EditMenuItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/ChordMenuItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/main/TGWindowLayout.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/TGBrowserConnectionHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdatePlayerTracksController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/documentation/TGDocumentationDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/edit/tablature/TGMouseClickAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateItemsController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/transport/TGOpenTransportModeDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/undoable/TGUndoableCaretState.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/properties/TGPropertiesImpl.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/printer/TGPrintPreviewDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/track/TGTrackPropertiesDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/keybindings/xml/KeyBindingReader.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/settings/TGReloadSettingsAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/save/TGUnsavedDocumentInterceptor.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateModifiedMarkerController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/printer/TGPrintStylesDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordCustomList.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/FileMenuItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/keybindings/TGKeyBindingSelectorHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/plugin/TGPluginListDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/tab/TablatureEditor.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/util/TGBufferedPainterLocked.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/measure/TGMeasureAddDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateCacheController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/channel/TGChannelSettingsDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/config/TGConfigPropertiesHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/caret/TGMoveToAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/marker/TGModifyMarkerAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/undo/impl/marker/TGUndoableMarkerGenericController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGImportSongAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/variables/TGVarAppVersion.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/harmonic/TGHarmonicDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/util/TGMessageDialogUtil.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/table/TGTableRowLayout.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/custom/TGToolItemPlugin.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/table/TGTableDividerHelper.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/impl/DurationMenuItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/fretboard/TGFretBoard.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/table/TGTableViewer.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/TGActionProcessorListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/layout/TGSetLinearLayoutAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/util/TGFileChooser.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/menu/TGMenuManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/help/TGOpenDocumentationDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGPrintPreviewAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/custom/TGCustomToolManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/trill/TGTrillDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/io/persistence/TGPersistenceSettingsHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/config/TGConfigDefaults.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/settings/TGSettingsEditorController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/error/TGGuiOutErrorHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/base/TGBrowserElementComparator.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/xml/TGChordXML.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/util/TGBufferedPainterListenerLocked.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/matrix/TGMatrixEditorController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/plugin/TGPluginInfoDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/plugins/TGPluginPropertiesHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/settings/items/TGSettingsOption.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/main/TGMainToolBar.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/bend/TGBendDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/about/TGAboutDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/tab/edit/MouseKit.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateModifiedChannelController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/xml/TGBrowserReader.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/edit/TGEditToolBarSectionDuration.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/lyric/TGLyricEditor.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/piano/TGPianoEditor.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGSaveFileAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/caret/TGGoDownAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/tab/edit/EditorKit.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGCloseDocumentsAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/synchronizer/TGSynchronizerControllerImpl.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/channel/TGChannelItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/measure/TGGoFirstMeasureAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/tab/TGControlPaintListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/error/TGStdOutErrorHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/transport/TGStopTransportInterceptor.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/xml/TGChordXMLWriter.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/clipboard/Transferable.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/clef/TGClefDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/file/TGCloseAllDocumentsAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/tab/Tablature.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/layout/TGSetChordDiagramEnabledAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/scale/ScaleManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/editor/EditorCache.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/save/TGDocumentModifierListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/variables/TGConfigPath.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/util/TGSyncProcess.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/table/TGTableBodyLayout.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/main/TGMainToolBarSectionTrack.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/keybindings/KeyBindingAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordCustomNameChooser.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/layout/TGSetTablatureEnabledAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/tempo/TGTempoDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/measure/TGMeasurePasteDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/repeat/TGRepeatAlternativeDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/effects/TGOpenTrillDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/insert/TGOpenRepeatAlternativeDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/util/TGCursorController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/util/TGSyncProcessLocked.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/beat/TGBeatMoveDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/main/TGMainToolBarController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/scale/TGScaleDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/variables/TGHomePath.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/marker/TGGoNextMarkerAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/controller/TGOpenViewController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/browser/main/TGBrowserMenuBar.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/plugins/TGPluginSettingsHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/TGActionContextFactoryImpl.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/measure/TGPasteMeasureAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/base/TGBrowserSettings.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/chord/TGChordSettings.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/transport/TGTransportModeDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/selector/TGSetSelectionBeginingAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/layout/TGSetChordNameEnabledAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/tools/TGTransposeAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/variables/TGVarFileName.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/edit/TGSetNaturalKeyAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/channel/TGChannelManagerDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/installer/TGActionInstaller.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/channel/TGChannelManagerDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/transport/TGTransportListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/properties/TGFilePropertiesReader.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/measure/TGMeasureRemoveDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/tools/TGOpenScaleDialogAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/properties/TGDefaultAndStoredPropertiesHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/gui/TGActionProcessingListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/channel/TGChannelSettingsPlugin.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/util/TGSplash.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/component/tab/TGControl.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/plugin/TGPluginInfoDialog.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/tools/TGToggleBrowserAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/settings/TGReloadStylesAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/piano/TGPianoConfig.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/plugins/TGPluginSettingsAdapter.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/system/variables/TGUserSharePath.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/cache/controller/TGUpdateShiftedNoteController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/io/persistence/TGPersistenceSettingsInterceptor.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/main/TGWindow.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/helper/TGFileHistory.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/matrix/TGMatrixEditor.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/edit/TGSetVoice1Action.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/tools/browser/TGBrowserFactoryListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/util/TGProcess.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/listener/undoable/TGUndoableJoined.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/clipboard/ClipBoard.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/dialog/keysignature/TGKeySignatureDialogController.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/action/impl/transport/TGTransportCountDownAction.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar/src/org/herac/tuxguitar/app/view/toolbar/edit/TGEditToolBarSection.java

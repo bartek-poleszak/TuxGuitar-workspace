@@ -1,29 +1,29 @@
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/sequencer/MidiSequencerProviderImpl.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/message/MidiProgramChangeMessage.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/assistant/SBUrl.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/midiport/MidiOutputPortProviderPlugin.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/sequencer/MidiReceiverImpl.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/assistant/SBInstallerlistener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/sequencer/MidiSequencerProviderPlugin.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/assistant/SBAssistant.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/message/MidiNoteOnMessage.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/utils/MidiConfigUtils.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/message/MidiMessageFactory.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/sequencer/MidiSequencerImpl.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/MidiPlugin.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/message/MidiNoteOffMessage.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/settings/MidiSettingsHandler.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/midiport/MidiPortSynthesizer.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/assistant/SBInstallerGui.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/message/MidiShortMessage.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/message/MidiTimeSignatureMessage.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/sequencer/MidiSequenceHandlerImpl.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/midiport/MidiPortOut.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/message/MidiControlChangeMessage.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/settings/MidiSettingsPlugin.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/sequencer/MidiSequenceLoader.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/message/MidiTempoInUsqMessage.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/message/MidiPitchBendMessage.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/assistant/SBInstaller.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/midiport/MidiPortProviderImpl.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/message/MidiSystemResetMessage.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/message/MidiSystemResetMessage.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/message/MidiShortMessage.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/midiport/MidiPortProviderImpl.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/assistant/SBInstaller.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/midiport/MidiOutputPortProviderPlugin.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/assistant/SBAssistant.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/assistant/SBUrl.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/message/MidiPitchBendMessage.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/sequencer/MidiSequenceLoader.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/midiport/MidiPortOut.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/sequencer/MidiReceiverImpl.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/sequencer/MidiSequencerImpl.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/utils/MidiConfigUtils.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/MidiPlugin.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/assistant/SBInstallerGui.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/settings/MidiSettingsHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/message/MidiMessageFactory.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/message/MidiNoteOnMessage.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/settings/MidiSettingsPlugin.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/message/MidiProgramChangeMessage.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/sequencer/MidiSequencerProviderImpl.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/message/MidiTempoInUsqMessage.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/midiport/MidiPortSynthesizer.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/sequencer/MidiSequencerProviderPlugin.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/sequencer/MidiSequenceHandlerImpl.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/message/MidiControlChangeMessage.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/message/MidiNoteOffMessage.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/assistant/SBInstallerlistener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-jsa/src/org/herac/tuxguitar/player/impl/jsa/message/MidiTimeSignatureMessage.java

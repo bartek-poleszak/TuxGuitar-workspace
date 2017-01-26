@@ -1,149 +1,149 @@
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/chooser/UIFileChooserHandler.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseWheelListenerManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIFocusGainedListenerManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UITabFolder.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UISlider.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIModifyListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMenuShowListenerManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UIPosition.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIResizeEvent.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIDisposeListenerManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UICloseEvent.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseWheelListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMenuHideListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIFocusEvent.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/printer/UIPrinterPage.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UICheckTableSelectionListenerManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UILinkLabel.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/toolbar/UIToolActionMenuItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/menu/UIMenuItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/menu/UIPopupMenu.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/chooser/UIColorChooserHandler.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseMoveListenerManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMenuEvent.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UITableItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseUpListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIToggleButton.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIListBoxSelect.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/menu/UIMenuSubMenuItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIPanel.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UILabel.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseEnterListenerManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseMoveListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UICheckTable.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIKnob.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/chooser/UIFileChooser.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseDragListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/toolbar/UIToolCustomItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UIFont.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIDropDownSelect.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIKeyEvent.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIModifyEvent.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIScrollBar.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UISelectionListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseUpListenerManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIPasswordField.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UIResourceFactory.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseDragListenerManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIButton.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UISeparator.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIWindow.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIScale.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIFocusLostListenerManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UIPainter.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/toolbar/UIToolCheckableItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIContainer.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UICheckTableSelectionListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UIResource.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UICursor.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/chooser/UIFileChooserFormat.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UISelectionListenerManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseDoubleClickListenerManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UIImage.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseEnterListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIKeyPressedListenerManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIKeyReleasedListenerManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/chooser/UIFontChooser.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIFocusLostListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/UIFactory.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UICheckTableSelectionEvent.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIDivider.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIImageView.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIReadOnlyTextField.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UICanvas.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseExitListenerManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIDisposeEvent.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMenuHideListenerManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UIColor.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/chooser/UIDirectoryChooser.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseDoubleClickListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/toolbar/UIToolActionItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UISpinner.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/chooser/UIColorChooser.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UILinkEvent.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIPaintEvent.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UIKeyMask.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIKeyReleasedListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/chooser/UIFontChooserHandler.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/chooser/UIPrinterChooser.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/layout/UIAbstractLayout.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIPaintListenerManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UISelectionEvent.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIControl.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/layout/UIScrollBarPanelLayout.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/printer/UIPrinter.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/menu/UIMenuBar.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/toolbar/UIToolMenuItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIPaintListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UITabItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIKeyPressedListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UISelectItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UISize.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseExitListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/UIApplication.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UIKey.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/layout/UITableLayout.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIEvent.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIProgressBar.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/menu/UIMenu.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UITable.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIDisposeListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseDownListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UILegendPanel.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/UIComponent.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseEvent.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UITextField.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UILayoutContainer.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/toolbar/UIToolBar.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/chooser/UIDirectoryChooserHandler.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UIKeyConvination.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UIColorModel.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/printer/UIPrinterJob.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/layout/UILayout.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/menu/UIMenuCheckableItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/menu/UIMenuActionItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UIFontModel.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UIKeyLabel.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/toolbar/UIToolItem.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseWheelEvent.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UICloseListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UITextArea.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIFocusGainedListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIRadioButton.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIResizeListenerManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseDownListenerManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIWrapLabel.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIReadOnlyTextBox.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMenuShowListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UISplashWindow.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UILinkListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/layout/UILayoutAttributes.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIModifyListenerManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UICloseListenerManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UICheckBox.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/chooser/UIPrinterChooserHandler.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIIndeterminateProgressBar.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UILinkListenerManager.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIScrollBarPanel.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIResizeListener.java
-/home/tubus/Dokumenty/tuxguitar/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UIRectangle.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIPasswordField.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UITabFolder.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIFocusEvent.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIPaintListenerManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseDownListenerManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIControl.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UICloseEvent.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UICheckTableSelectionListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/toolbar/UIToolBar.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIReadOnlyTextBox.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIKeyPressedListenerManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UICanvas.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/menu/UIMenuCheckableItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UICheckTable.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UISpinner.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIDisposeEvent.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIFocusLostListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UILinkLabel.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UIFontModel.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/menu/UIMenuItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/toolbar/UIToolCheckableItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UICheckBox.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UISlider.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/chooser/UIFileChooser.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UICloseListenerManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UIResource.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/menu/UIMenuActionItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UILinkListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UILabel.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/printer/UIPrinterJob.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIIndeterminateProgressBar.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UILinkListenerManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UICursor.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseDoubleClickListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/chooser/UIColorChooserHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIListBoxSelect.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/chooser/UIPrinterChooserHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseWheelListenerManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/chooser/UIFontChooser.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIWrapLabel.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseMoveListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/layout/UIAbstractLayout.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UILinkEvent.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIResizeListenerManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseEnterListenerManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIEvent.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/chooser/UIColorChooser.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIModifyListenerManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIFocusGainedListenerManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseDragListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIFocusGainedListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseEvent.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/toolbar/UIToolMenuItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIProgressBar.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseWheelListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIResizeEvent.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIDisposeListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/chooser/UIPrinterChooser.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UITextField.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UIKeyConvination.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UIPosition.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIScrollBar.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/chooser/UIDirectoryChooser.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UIKeyLabel.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIFocusLostListenerManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UISize.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/menu/UIMenu.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UISeparator.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/layout/UILayoutAttributes.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIPanel.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIReadOnlyTextField.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UISelectItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/chooser/UIFontChooserHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/toolbar/UIToolActionItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMenuEvent.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UIFont.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseEnterListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseMoveListenerManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UIKeyMask.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UITabItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIPaintListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/chooser/UIDirectoryChooserHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UIKey.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/UIFactory.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UICheckTableSelectionEvent.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMenuShowListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UISplashWindow.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMenuHideListenerManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIRadioButton.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseExitListenerManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/toolbar/UIToolActionMenuItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIKeyReleasedListenerManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIPaintEvent.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UIColor.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/chooser/UIFileChooserHandler.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIModifyEvent.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UIResourceFactory.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseDoubleClickListenerManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIDropDownSelect.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIKeyEvent.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseUpListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UISelectionListenerManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIDisposeListenerManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseWheelEvent.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/chooser/UIFileChooserFormat.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/menu/UIMenuSubMenuItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseExitListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UIRectangle.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/toolbar/UIToolItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMenuShowListenerManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseDownListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/toolbar/UIToolCustomItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UICloseListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UIImage.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UIColorModel.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIWindow.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/menu/UIMenuBar.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UITextArea.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIScale.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIButton.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/UIComponent.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIScrollBarPanel.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIModifyListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UISelectionEvent.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/layout/UILayout.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseDragListenerManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIImageView.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIContainer.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/layout/UIScrollBarPanelLayout.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UISelectionListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UICheckTableSelectionListenerManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UITable.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIResizeListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIKeyReleasedListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIDivider.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/resource/UIPainter.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UITableItem.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/menu/UIPopupMenu.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIKeyPressedListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIToggleButton.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UIKnob.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMenuHideListener.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/event/UIMouseUpListenerManager.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/UIApplication.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UILegendPanel.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/layout/UITableLayout.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/printer/UIPrinterPage.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/widget/UILayoutContainer.java
+/home/tubus/Dokumenty/tuxguitar (kopia)/tuxguitar-code/TuxGuitar-ui-toolkit/src/org/herac/tuxguitar/ui/printer/UIPrinter.java

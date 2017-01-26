@@ -1,6 +1,8 @@
 package org.herac.tuxguitar.android.browser.model;
 
-public interface TGBrowserFactoryHandler {
+import org.herac.tuxguitar.util.error.TGErrorHandler;
+
+public interface TGBrowserFactoryHandler extends TGErrorHandler {
 	
-	void onCreateBrowser(TGBrowser browser) throws TGBrowserException;
+	void onCreateBrowser(TGBrowser browser);
 }

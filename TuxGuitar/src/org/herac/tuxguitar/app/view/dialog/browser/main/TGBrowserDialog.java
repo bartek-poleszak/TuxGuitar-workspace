@@ -1,22 +1,28 @@
 package org.herac.tuxguitar.app.view.dialog.browser.main;
 
 import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URLEncoder;
 import java.util.Iterator;
 import java.util.List;
 
 import org.herac.tuxguitar.app.TuxGuitar;
+import org.herac.tuxguitar.app.document.TGDocumentListAttributes;
 import org.herac.tuxguitar.app.system.icons.TGIconEvent;
 import org.herac.tuxguitar.app.system.icons.TGIconManager;
 import org.herac.tuxguitar.app.system.language.TGLanguageEvent;
 import org.herac.tuxguitar.app.tools.browser.TGBrowserCollection;
 import org.herac.tuxguitar.app.tools.browser.TGBrowserConnection;
 import org.herac.tuxguitar.app.tools.browser.TGBrowserConnectionHandler;
-import org.herac.tuxguitar.app.tools.browser.TGBrowserFactoryHandler;
+import org.herac.tuxguitar.app.tools.browser.TGBrowserFactoryListener;
 import org.herac.tuxguitar.app.tools.browser.TGBrowserManager;
 import org.herac.tuxguitar.app.tools.browser.base.TGBrowser;
 import org.herac.tuxguitar.app.tools.browser.base.TGBrowserCallBack;
 import org.herac.tuxguitar.app.tools.browser.base.TGBrowserElement;
 import org.herac.tuxguitar.app.tools.browser.base.TGBrowserFactory;
+import org.herac.tuxguitar.app.tools.browser.base.TGBrowserFactoryHandler;
 import org.herac.tuxguitar.app.ui.TGApplication;
 import org.herac.tuxguitar.app.util.TGMessageDialogUtil;
 import org.herac.tuxguitar.app.view.main.TGWindow;
@@ -26,6 +32,7 @@ import org.herac.tuxguitar.editor.action.TGActionProcessor;
 import org.herac.tuxguitar.editor.action.file.TGReadSongAction;
 import org.herac.tuxguitar.event.TGEvent;
 import org.herac.tuxguitar.event.TGEventListener;
+import org.herac.tuxguitar.io.base.TGFileFormatUtils;
 import org.herac.tuxguitar.ui.UIFactory;
 import org.herac.tuxguitar.ui.event.UIDisposeEvent;
 import org.herac.tuxguitar.ui.event.UIDisposeListener;
@@ -39,13 +46,14 @@ import org.herac.tuxguitar.ui.widget.UITable;
 import org.herac.tuxguitar.ui.widget.UITableItem;
 import org.herac.tuxguitar.ui.widget.UIWindow;
 import org.herac.tuxguitar.util.TGContext;
+import org.herac.tuxguitar.util.TGException;
 import org.herac.tuxguitar.util.TGSynchronizer;
 import org.herac.tuxguitar.util.error.TGErrorHandler;
 import org.herac.tuxguitar.util.error.TGErrorManager;
 import org.herac.tuxguitar.util.singleton.TGSingletonFactory;
 import org.herac.tuxguitar.util.singleton.TGSingletonUtil;
 
-public class TGBrowserDialog implements TGBrowserFactoryHandler, TGBrowserConnectionHandler,TGEventListener{
+public class TGBrowserDialog implements TGBrowserFactoryListener, TGBrowserConnectionHandler,TGEventListener{
 	
 	private static final int SHELL_WIDTH = 500;
 	private static final int SHELL_HEIGHT = 350;
@@ -230,14 +238,24 @@ public class TGBrowserDialog implements TGBrowserFactoryHandler, TGBrowserConnec
 	
 	public void openCollection(){
 		if(!isDisposed() && getCollection() != null){
-			TGBrowserFactory factory = TGBrowserManager.getInstance(this.context).getFactory(getCollection().getType());
-			TGBrowser browser = factory.newTGBrowser(getCollection().getData());
-			
-			getConnection().open(new TGAbstractBrowserCallBack<Object>() {
-				public void onSuccess(Object data) {
-					onOpenCollection();
-				}
-			}, browser);
+			TGBrowserFactory tgBrowserFactory = TGBrowserManager.getInstance(this.context).getFactory(getCollection().getType());
+			if( tgBrowserFactory != null ) {
+				tgBrowserFactory.createBrowser(new TGBrowserFactoryHandler() {
+					public void onCreateBrowser(TGBrowser browser) {
+						getConnection().open(new TGAbstractBrowserCallBack<Object>() {
+							public void onSuccess(Object data) {
+								onOpenCollection();
+							}
+						}, browser);
+					}
+					
+					public void handleError(Throwable throwable) {
+						TGBrowserDialog.this.notifyError(throwable);
+					}
+				}, getCollection().getData());
+			} else {
+				this.closeCollection();
+			}
 		}
 	}
 	
@@ -354,6 +372,8 @@ public class TGBrowserDialog implements TGBrowserFactoryHandler, TGBrowserConnec
 		
 		TGActionProcessor tgActionProcessor = new TGActionProcessor(this.context, TGReadSongAction.NAME);
 		tgActionProcessor.setAttribute(TGReadSongAction.ATTRIBUTE_INPUT_STREAM, stream);
+		tgActionProcessor.setAttribute(TGReadSongAction.ATTRIBUTE_FORMAT_CODE, TGFileFormatUtils.getFileFormatCode(element.getName()));
+		tgActionProcessor.setAttribute(TGDocumentListAttributes.ATTRIBUTE_DOCUMENT_URI, this.createElementURI(element));
 		tgActionProcessor.setOnFinish(new Runnable() {
 			public void run() {
 				loadCursor(UICursor.NORMAL);
@@ -367,6 +387,16 @@ public class TGBrowserDialog implements TGBrowserFactoryHandler, TGBrowserConnec
 			}
 		});
 		tgActionProcessor.process();
+	}
+	
+	public URI createElementURI(TGBrowserElement element) {
+		try {
+			return new URI("browser:///" + URLEncoder.encode(element.getName(), "UTF-8"));
+		} catch (URISyntaxException e) {
+			throw new TGException(e);
+		} catch (UnsupportedEncodingException e) {
+			throw new TGException(e);
+		}
 	}
 	
 	public void loadIcons() {

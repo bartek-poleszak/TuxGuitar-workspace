@@ -15,10 +15,11 @@ import java.io.InputStream;
 public class TGBrowserOpenElementAction extends TGActionBase{
 	
 	public static final String NAME = "action.browser.open-element";
-	
+
 	public static final String ATTRIBUTE_ELEMENT = TGBrowserElement.class.getName();
 	public static final String ATTRIBUTE_SESSION = TGBrowserSession.class.getName();
-	
+	public static final String ATTRIBUTE_FORMAT_CODE = TGReadSongAction.ATTRIBUTE_FORMAT_CODE;
+
 	public TGBrowserOpenElementAction(TGContext context) {
 		super(context, NAME);
 	}

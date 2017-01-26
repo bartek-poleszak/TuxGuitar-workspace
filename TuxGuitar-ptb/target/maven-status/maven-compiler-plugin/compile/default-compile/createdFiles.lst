@@ -1,6 +1,7 @@
 org/herac/tuxguitar/io/ptb/base/PTTempo.class
 org/herac/tuxguitar/io/ptb/base/PTGuitarIn.class
 org/herac/tuxguitar/io/ptb/base/PTBeat.class
+org/herac/tuxguitar/io/ptb/PTFileFormatDetector.class
 org/herac/tuxguitar/io/ptb/PTSongParser.class
 org/herac/tuxguitar/io/ptb/PTSongSynchronizerUtil$PTSongSynchronizerData.class
 org/herac/tuxguitar/io/ptb/base/PTPosition.class

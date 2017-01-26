@@ -155,7 +155,8 @@ public class TGMeasureImpl extends TGMeasure{
 	private float beatEffectSpacing;
 	private boolean text;
 	private boolean chord;
-	private boolean division;
+	private boolean division1;
+	private boolean division2;
 	
 	private boolean[][] registeredAccidentals;
 	
@@ -487,8 +488,11 @@ public class TGMeasureImpl extends TGMeasure{
 					}
 					voice.update(layout);
 					
-					if(!this.division && !voice.getDuration().getDivision().isEqual(TGDivisionType.NORMAL)){
-						this.division = true;
+					if(!this.division1 && (v % 2 == 0) && !voice.getDuration().getDivision().isEqual(TGDivisionType.NORMAL)){
+						this.division1 = true;
+					}
+					if(!this.division2 && (v % 2 == 1) && !voice.getDuration().getDivision().isEqual(TGDivisionType.NORMAL)){
+						this.division2 = true;
 					}
 					if( (layout.getStyle() & TGLayout.DISPLAY_SCORE) == 0 || (voice.isRestVoice() && !voice.isHiddenSilence()) ){
 						if( voice.getMaxY() > this.maxY ){
@@ -581,7 +585,8 @@ public class TGMeasureImpl extends TGMeasure{
 	private void resetSpacing(){
 		this.text = false;
 		this.chord = false;
-		this.division = false;
+		this.division1 = false;
+		this.division2 = false;
 		this.beatEffectSpacing = 0;
 	}
 	
@@ -601,8 +606,11 @@ public class TGMeasureImpl extends TGMeasure{
 		if(this.getHeader().getRepeatAlternative() > 0){
 			ts.setSize(TGTrackSpacing.POSITION_REPEAT_ENDING,layout.getRepeatEndingSpacing());
 		}
-		if(this.division){
-			ts.setSize(TGTrackSpacing.POSITION_DIVISION_TYPE,layout.getDivisionTypeSpacing());
+		if(this.division1){
+			ts.setSize(TGTrackSpacing.POSITION_DIVISION_TYPE_1,layout.getDivisionTypeSpacing());
+		}
+		if(this.division2){
+			ts.setSize(TGTrackSpacing.POSITION_DIVISION_TYPE_2,layout.getDivisionTypeSpacing());
 		}
 		if( this.beatEffectSpacing > 0 ){
 			ts.setSize(TGTrackSpacing.POSITION_EFFECTS, this.beatEffectSpacing );
@@ -639,7 +647,6 @@ public class TGMeasureImpl extends TGMeasure{
 			}
 			if( bufferEnabled ){
 				painter.setBackground(layout.getResources().getBackgroundColor());
-//				getBuffer().paintBuffer(resourceBuffer, painter, getPosX(), getPosY(), getTs().getPosition(TGTrackSpacing.POSITION_BUFFER_SEPARATOR));
 				getBuffer().paintBuffer(resourceBuffer, painter, getPosX(), getPosY());
 			}
 			
@@ -687,11 +694,85 @@ public class TGMeasureImpl extends TGMeasure{
 	 * Pinta las notas
 	 */
 	public void paintComponents(TGLayout layout,TGPainter painter, float fromX, float fromY) {
+		float x = (fromX + getHeaderImpl().getLeftSpacing(layout));
+		
 		Iterator<TGBeat> it = getBeats().iterator();
-		while(it.hasNext()){
+		while(it.hasNext()) {
 			TGBeatImpl beat = (TGBeatImpl)it.next();
-			beat.paint(layout, painter, fromX + getHeaderImpl().getLeftSpacing(layout) ,fromY);
+			beat.paint(layout, painter, x, fromY);
 		}
+		
+		this.paintDivisionTypes(layout, painter, x, fromY);
+	}
+	
+	public void paintDivisionTypes(TGLayout layout, TGPainter painter, float fromX, float fromY){
+		for(int v = 0; v < TGBeat.MAX_VOICES; v ++) {
+			if((this.division1 && v % 2 == 0) || (this.division2 && v % 2 == 1)) {
+				this.paintDivisionTypes(layout, painter, fromX, fromY, v);
+			}
+		}
+	}
+	
+	public void paintDivisionTypes(TGLayout layout, TGPainter painter, float fromX, float fromY, int voiceIndex){
+		float x1 = 0;
+		float x2 = 0;
+		
+		TGDivisionType divisionType = null;
+		Iterator<TGBeat> it = getBeats().iterator();
+		while(it.hasNext()) {
+			TGBeatImpl beat = (TGBeatImpl)it.next();
+			TGVoiceImpl voice = beat.getVoiceImpl(voiceIndex);				
+			if( !voice.isEmpty() ) {
+				if( divisionType != null && !voice.getDuration().getDivision().isEqual(divisionType) ) {
+					this.paintDivisionType(layout, painter, divisionType, x1, x2, fromY, voiceIndex);
+					
+					divisionType = null;
+				}
+				
+				if(!voice.getDuration().getDivision().isEqual(TGDivisionType.NORMAL)) {
+					x2 = (fromX + beat.getPosX() + beat.getSpacing(layout));
+					if( divisionType == null ) {
+						divisionType = voice.getDuration().getDivision();
+						x1 = x2;
+					}
+				}
+			}
+		}
+		if( divisionType != null ) {
+			this.paintDivisionType(layout, painter, divisionType, x1, x2, fromY, voiceIndex);
+		}
+	}
+	
+	public void paintDivisionType(TGLayout layout, TGPainter painter, TGDivisionType divisionType, float beatX1, float beatX2, float fromY, int voice) {
+		layout.setDivisionTypeStyle(painter);
+		
+		String label = Integer.toString(divisionType.getEnters());
+		float scale = layout.getScale();
+		float labelWidth = painter.getFMWidth(label);
+		float y = (fromY + getTs().getPosition(voice % 2 == 0 ? TGTrackSpacing.POSITION_DIVISION_TYPE_1 : TGTrackSpacing.POSITION_DIVISION_TYPE_2));
+		float yMove = ((layout.getDivisionTypeSpacing() / 2f) - scale);
+		float xMove = ((((layout.getStyle() & TGLayout.DISPLAY_SCORE) != 0 ? layout.getScoreNoteWidth() : layout.getStringSpacing()) / 2f) + scale);
+		float y1 = (y + yMove + (yMove * (voice % 2 == 0 ? 1 : -1)));
+		float y2 = (y + yMove);
+		float x1 = (beatX1 - xMove);
+		float x2 = (beatX2 + (xMove * 2f));
+		float xCenter = (x1 + ((x2 - x1) / 2f));
+		
+		if( beatX2 > beatX1 ) {
+			painter.setLineWidth(scale);
+			painter.initPath(TGPainter.PATH_DRAW);
+			painter.moveTo(x1, y1);
+			painter.lineTo(x1, y2);
+			painter.lineTo(xCenter - (labelWidth / 2f) - scale, y2);
+			
+			painter.moveTo(x2, y1);
+			painter.lineTo(x2, y2);
+			painter.lineTo(xCenter + (labelWidth / 2f) + scale, y2);
+			
+			painter.closePath();
+		}
+		
+		painter.drawString(label, (xCenter - (labelWidth / 2f)), (y2 + painter.getFMMiddleLine()));
 	}
 	
 	/**
